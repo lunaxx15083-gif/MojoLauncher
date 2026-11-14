@@ -17,6 +17,10 @@ static def getDateSeconds() {
 }
 
 def getVersionName = {
+    // Builds from a ZIP archive have no .git directory, so grgit is unavailable there
+    def hasGit = false
+    try { hasGit = (grgit != null) } catch (Throwable ignored) { hasGit = false }
+    if (!hasGit) return "LOCAL-${getDate()}"
     def currentBranch = grgit.branch.current()
     def latestCommit = grgit.log(maxCommits: 1)
     def dateToday = getDate()

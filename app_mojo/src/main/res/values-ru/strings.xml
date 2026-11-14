@@ -499,4 +499,6 @@
     <string name="pref_clean_partfiles_subtitle_wait">Очистить кеш недозагруженных файлов. Рассчёт используемого места…</string>
     <string name="pref_clean_partfiles_subtitle">Очистить кеш недозагруженных файлов. В данный момент используется %.2f МБ</string>
     <string name="clean_partfiles_wait">Очистка кеша скачиваний…</string>
+    <string name="preference_device_info_title">Устройство</string>
+    <string name="preference_device_info_summary">Процессор: %1$s\nGPU: %2$s\nOpenGL ES: %3$d\nЯдер CPU: %4$d\nОЗУ: %5$d МБ</string>
 </resources>

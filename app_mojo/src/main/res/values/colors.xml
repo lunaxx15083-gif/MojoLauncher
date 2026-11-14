@@ -5,14 +5,22 @@
 
     <color name="minebutton_color">#91dffb</color>
     <color name="minebutton_secondary">#2a2a2a</color>
-    <color name="background_app">#181818</color>
+
+    <!-- Graphite surfaces with a single grass-green accent -->
+    <color name="background_app">#121518</color>
     <color name="divider">@color/background_overlay</color>
-    <color name="background_overlay">#464646</color>
-    <color name="background_status_bar">#242424</color>
-    <color name="background_bottom_bar">#232323</color>
+    <color name="background_overlay">#2B3238</color>
+    <color name="background_status_bar">#1A1E22</color>
+    <color name="background_bottom_bar">#1A1E22</color>
     <color name="icon_outline_color">#FFFFFF</color>
 
+    <color name="surface_card">#1F252A</color>
+    <color name="surface_card_pressed">#2A3238</color>
+    <color name="accent">#2E8B4F</color>
+    <color name="accent_disabled">#2A3A30</color>
+    <color name="ripple_light">#33FFFFFF</color>
+
     <color name="primary_text">#FFFFFF</color>
-    <color name="secondary_text">#B2B2B2</color>
+    <color name="secondary_text">#9AA4AD</color>
 
 </resources>

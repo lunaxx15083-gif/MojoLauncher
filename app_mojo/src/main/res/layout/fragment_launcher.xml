@@ -16,7 +16,8 @@
 		app:layout_constraintBottom_toTopOf="@id/mc_version_spinner">
 		<androidx.constraintlayout.widget.ConstraintLayout
 			android:layout_width="match_parent"
-			android:layout_height="wrap_content">
+			android:layout_height="wrap_content"
+			android:padding="@dimen/padding_medium">
 			<androidx.constraintlayout.widget.Guideline
 				android:id="@+id/center_guideline"
 				android:layout_width="0dp"
@@ -26,6 +27,7 @@
 			<com.kdt.mcgui.LauncherMenuButton
 				android:id="@+id/news_button"
 				style="@style/LauncherMenuButton.Universal"
+				android:layout_margin="@dimen/padding_moderate"
 				android:layout_width="0dp"
 				android:text="@string/mcl_tab_wiki"
 				android:drawableStart="@drawable/ic_px_book"
@@ -35,6 +37,7 @@
 			<View
 				android:id="@+id/social_divider"
 				style="@style/LauncherFragment_Divider"
+				android:visibility="invisible"
 				android:layout_marginVertical="@dimen/padding_large"
 				app:layout_constraintTop_toTopOf="parent"
 				app:layout_constraintStart_toStartOf="@id/center_guideline"
@@ -43,6 +46,7 @@
 			<com.kdt.mcgui.LauncherMenuButton
 				android:id="@+id/social_media_button"
 				style="@style/LauncherMenuButton.Universal"
+				android:layout_margin="@dimen/padding_moderate"
 				android:layout_width="0dp"
 				android:text="@string/mcl_button_social_media"
 				android:drawableStart="@drawable/ic_social_media"
@@ -54,6 +58,7 @@
 			<com.kdt.mcgui.LauncherMenuButton
 				android:id="@+id/custom_control_button"
 				style="@style/LauncherMenuButton.Universal"
+				android:layout_margin="@dimen/padding_moderate"
 				android:layout_width="match_parent"
 				android:drawableStart="@drawable/ic_px_gamepad"
 				android:text="@string/mcl_option_customcontrol"
@@ -62,6 +67,7 @@
 			<com.kdt.mcgui.LauncherMenuButton
 				android:id="@+id/install_jar_button"
 				style="@style/LauncherMenuButton.Universal"
+				android:layout_margin="@dimen/padding_moderate"
 				android:layout_width="match_parent"
 				android:drawableStart="@drawable/ic_px_java_run"
 				android:text="@string/main_install_jar_file"
@@ -70,6 +76,7 @@
 			<com.kdt.mcgui.LauncherMenuButton
 				android:id="@+id/share_logs_button"
 				style="@style/LauncherMenuButton.Universal"
+				android:layout_margin="@dimen/padding_moderate"
 				android:layout_width="match_parent"
 				android:drawableStart="@drawable/ic_px_sharelog"
 				android:text="@string/main_share_logs"
@@ -78,6 +85,7 @@
 			<com.kdt.mcgui.LauncherMenuButton
 				android:id="@+id/open_files_button"
 				style="@style/LauncherMenuButton.Universal"
+				android:layout_margin="@dimen/padding_moderate"
 				android:layout_width="match_parent"
 				android:drawableStart="@drawable/ic_px_folder"
 				android:text="@string/mcl_button_open_directory"

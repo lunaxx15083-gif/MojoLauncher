@@ -4,6 +4,12 @@
     <git.artdeell.mojo.prefs.BackButtonPreference />
     <PreferenceCategory android:title="@string/preference_category_experimental_settings">
 
+        <Preference
+            android:key="deviceInfo"
+            android:persistent="false"
+            android:selectable="false"
+            android:title="@string/preference_device_info_title" />
+
         <SwitchPreferenceCompat
             android:key="dump_shaders"
             android:title="@string/preference_shader_dump_title"

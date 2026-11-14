@@ -2,8 +2,10 @@ package git.artdeell.mojo.prefs.screens;
 
 import android.os.Bundle;
 
+import androidx.preference.Preference;
 import androidx.preference.SwitchPreferenceCompat;
 
+import git.artdeell.mojo.utils.DeviceProfile;
 import git.artdeell.mojo.utils.GpuUtils;
 
 import git.artdeell.mojo.R;
@@ -13,6 +15,8 @@ public class LauncherPreferenceExperimentalFragment extends LauncherPreferenceFr
     @Override
     public void onCreatePreferences(Bundle b, String str) {
         addPreferencesFromResource(R.xml.pref_experimental);
+        Preference deviceInfo = requirePreference("deviceInfo", Preference.class);
+        deviceInfo.setSummary(DeviceProfile.describe(requireContext()));
         SwitchPreferenceCompat sysmem = requirePreference("freedrenoSysmem", SwitchPreferenceCompat.class);
         SwitchPreferenceCompat ubwc = requirePreference("ubwcWorkaround", SwitchPreferenceCompat.class);
         boolean hasFreedreno = GpuUtils.getGlInfo().isAdreno();

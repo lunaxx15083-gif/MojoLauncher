@@ -16,6 +16,7 @@ import git.artdeell.mojo.*;
 
 import git.artdeell.mojo.Tools;
 import git.artdeell.mojo.multirt.MultiRTUtils;
+import git.artdeell.mojo.utils.DeviceProfile;
 import git.artdeell.mojo.utils.GpuUtils;
 import git.artdeell.mojo.utils.JREUtils;
 
@@ -84,6 +85,7 @@ public class LauncherPreferences {
     public static void loadPreferences(Context ctx) {
         //Required for CTRLDEF_FILE and MultiRT
         Tools.initStorageConstants(ctx);
+        DeviceProfile.applyFirstRunDefaults(DEFAULT_PREF);
         boolean isDevicePowerful = isDevicePowerful(ctx);
 
         PREF_RENDERER = DEFAULT_PREF.getString("renderer", "opengles2");
