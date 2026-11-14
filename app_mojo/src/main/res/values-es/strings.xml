@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
     <!-- App name part -->
-    <string name="app_short_name">MJLauncher</string>
+    <string name="app_short_name">MojavLauncher</string>
     <!-- Action bar part -->
     <!-- Languages list part -->
     <!-- Login strings -->
@@ -13,7 +13,7 @@
     <!-- AlertDialog title -->
     <string name="alerttitle_installmod">Seleccione un instalador de modificaciones</string>
     <!-- Error messages -->
-    <string name="error_fatal">MJLauncher se ha detenido de forma inesperada</string>
+    <string name="error_fatal">MojavLauncher se ha detenido de forma inesperada</string>
     <string name="error_no_version">¡No hay versiones!</string>
     <string name="error_show_more">Mostrar más</string>
     <string name="error_show_less">Mostrar menos</string>
@@ -201,7 +201,7 @@
     <string name="pedit_java_runtime">Java Runtime</string>
     <string name="pedit_renderer">Renderizador</string>
     <string name="notif_channel_name">General</string>
-    <string name="lazy_service_default_title">Servicio de primer plano de MJLauncher</string>
+    <string name="lazy_service_default_title">Servicio de primer plano de MojavLauncher</string>
     <string name="mcl_setting_veroption_installed">Instalada</string>
     <string name="use_global_default">(Usar predeterminado global)</string>
     <string name="default_control">Controles por defecto</string>
@@ -231,7 +231,7 @@
     <string name="preference_gyro_sample_rate_title">Tasa de muestreo del giroscopio</string>
     <string name="preference_gyro_sample_rate_description">Si tienes problemas de rendimiento con el giroscopio, sube esto.</string>
     <string name="microsoft_login_retry_later">Demasiadas solicitudes, inténtalo de nuevo más tarde.</string>
-    <string name="storage_required">MJLauncher necesita que el almacenamiento externo esté conectado, por favor reconéctalo y reinicia la aplicación.</string>
+    <string name="storage_required">MojavLauncher necesita que el almacenamiento externo esté conectado, por favor reconéctalo y reinicia la aplicación.</string>
     <string name="mcl_setting_title_buttonallcaps">Usa únicamente letras mayúsculas en las etiquetas de los botones</string>
     <string name="mcl_setting_subtitle_buttonallcaps">Desactiva esta opción si quieres usar letras minúsculas en tus controles.</string>
     <string name="preference_shader_dump_title">Activar dumpeo de shaders</string>
@@ -311,7 +311,7 @@
     <string name="preference_category_miscellaneous">Ajustes varios</string>
     <string name="preference_category_video">Ajustes de video</string>
     <string name="notification_permission_dialog_title">Permiso requerido</string>
-    <string name="notification_permission_dialog_text">MJLauncher necesita un permiso para enviar notificaciones para evitar que las descargas del juego o modpacks se detengan cuando minimizes la aplicación. Sin este permiso, Android puede cancelar tus descargas cuando MJLauncher esté en segundo plano.</string>
+    <string name="notification_permission_dialog_text">MojavLauncher necesita un permiso para enviar notificaciones para evitar que las descargas del juego o modpacks se detengan cuando minimizes la aplicación. Sin este permiso, Android puede cancelar tus descargas cuando MojavLauncher esté en segundo plano.</string>
     <string name="notification_permission_toast">Siempre puedes cambiar de opinión más tarde yendo a Ajustes</string>
     <string name="preference_ask_for_notification_title">Permitir notificaciones</string>
     <string name="preference_ask_for_notification_description">Haz clic para volver a solicitar el permiso de notificaciones, necesario para qué las descargas en segundo plano del juego/modpack funcionen correctamente.</string>
@@ -361,4 +361,42 @@
     <string name="preference_device_info_summary">SoC: %1$s\nGPU: %2$s\nOpenGL ES: %3$d\nNúcleos de CPU: %4$d\nRAM: %5$d MB</string>
     <string name="preference_language_title">Idioma</string>
     <string name="language_system_default">Predeterminado del sistema</string>
+    <string name="main_transfer_title">Transferir</string>
+    <string name="main_help_title">Ayuda</string>
+    <string name="preference_migration_title">Transferir datos</string>
+    <string name="preference_migration_description">Importa mundos, mods y ajustes desde Mojo o Pojav</string>
+    <string name="migration_info_summary">Elige la carpeta del juego de tu antiguo launcher: en Pojav suele ser games/PojavLauncher/.minecraft y en Mojo la carpeta del perfil. Los archivos existentes nunca se sobrescriben.</string>
+    <string name="preference_category_migration_what">Qué transferir</string>
+    <string name="migration_opt_worlds">Mundos (saves)</string>
+    <string name="migration_opt_worlds_summary">Desactivado por defecto, puede ocupar mucho espacio</string>
+    <string name="migration_opt_mods">Mods</string>
+    <string name="migration_opt_resourcepacks">Paquetes de recursos</string>
+    <string name="migration_opt_shaders">Paquetes de shaders</string>
+    <string name="migration_opt_screenshots">Capturas de pantalla</string>
+    <string name="migration_opt_settings">Ajustes del juego y servidores</string>
+    <string name="migration_opt_versions">Versiones instaladas</string>
+    <string name="migration_start_title">Elegir carpeta y transferir</string>
+    <string name="migration_start_summary">Selecciona la carpeta del juego del launcher antiguo</string>
+    <string name="migration_full_title">Copia completa desde otro Mojo</string>
+    <string name="migration_full_summary">Todos los datos, incluidas cuentas y perfiles (solo Mojo)</string>
+    <string name="migration_confirm_title">¿Iniciar la transferencia?</string>
+    <string name="migration_confirm_message">Los elementos seleccionados se copiarán al perfil actual. Los archivos existentes no se sobrescriben.</string>
+    <string name="migration_not_found">Esto no parece una carpeta de juego. Elige la carpeta que contiene saves, mods o versions.</string>
+    <string name="migration_nothing_selected">Selecciona al menos un elemento para transferir</string>
+    <string name="migration_done">Transferencia terminada: %1$d copiados, %2$d omitidos</string>
+    <string name="migration_no_space">No hay espacio libre suficiente para la transferencia</string>
+    <string name="preference_restore_optimal_title">Restaurar ajustes óptimos</string>
+    <string name="preference_restore_optimal_summary">Restablece los gráficos y el rendimiento a los valores elegidos para este dispositivo</string>
+    <string name="restore_optimal_confirm_message">Las opciones de gráficos y rendimiento volverán a los valores elegidos para tu dispositivo. ¿Continuar?</string>
+    <string name="restore_optimal_done">Ajustes óptimos restaurados</string>
+    <string name="help_title">Ayuda y herramientas</string>
+    <string name="help_description">Guía, enlaces, registro e instalador de .jar</string>
+    <string name="help_guide_title">Cómo usar el launcher</string>
+    <string name="help_offer_title">¡Te damos la bienvenida!</string>
+    <string name="help_offer_message">¿Quieres un recorrido rápido por el launcher? Puedes abrirlo cuando quieras en Ajustes → Ayuda y herramientas.</string>
+    <string name="help_offer_yes">Mostrar</string>
+    <string name="help_offer_no">Ahora no</string>
+    <string name="help_guide_summary">Un breve recorrido por las funciones principales</string>
+    <string name="preference_category_migration_full">Copia completa</string>
+    <string name="help_guide_text">1. Elige un perfil o versión abajo y pulsa Jugar.\n2. Toca tu nombre arriba para iniciar sesión o cambiar de cuenta.\n3. ¿Pocos FPS? Abre Ajustes → Video y renderizador y pulsa Restaurar ajustes óptimos.\n4. Controles personalizados te permite mover y cambiar el tamaño de los botones en pantalla.\n5. Transferir trae mundos, mods y ajustes desde Mojo o Pojav.\n6. Ajustes → Personalización cambia el idioma, el color de acento y los iconos.\n7. Abrir directorio del juego muestra los mundos, mods y paquetes de recursos del perfil.\n8. Si el juego se cierra, comparte el registro desde Ajustes → Ayuda y herramientas.</string>
 </resources>

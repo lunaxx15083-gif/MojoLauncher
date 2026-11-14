@@ -80,6 +80,24 @@ public final class DeviceProfile {
         return gpuFamily() == GpuFamily.MALI && hasMixedCoreFrequencies();
     }
 
+    /** Graphics and performance options that are reset by "Restore optimal settings" */
+    private static final String[] OPTIMAL_KEYS = {
+            "renderer", "resolutionRatio", "sustainedPerformance", "alternate_surface", "force_vsync",
+            "use_angle", "zinkPreferSystemDriver", "bigCoreAffinity", "freedrenoSysmem", "ubwcWorkaround", "allocation"
+    };
+
+    /**
+     * Forgets the user's graphics/performance choices so that the launcher falls back to the values
+     * it picks for this device, then applies the device profile again.
+     */
+    public static void restoreOptimalSettings(SharedPreferences prefs) {
+        SharedPreferences.Editor editor = prefs.edit();
+        for (String key : OPTIMAL_KEYS) editor.remove(key);
+        editor.remove(KEY_PROFILE_VERSION);
+        editor.commit();
+        applyFirstRunDefaults(prefs);
+    }
+
     public static void applyFirstRunDefaults(SharedPreferences prefs) {
         if (prefs.getInt(KEY_PROFILE_VERSION, 0) >= PROFILE_VERSION) return;
         SharedPreferences.Editor editor = prefs.edit();

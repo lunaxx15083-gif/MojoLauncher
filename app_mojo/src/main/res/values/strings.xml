@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
     <!-- App name part -->
-    <string name="app_short_name">MJLauncher</string>
+    <string name="app_short_name">MojavLauncher</string>
 
     <!-- Action bar part -->
 
@@ -21,7 +21,7 @@
     <string name="alerttitle_installmod">Select a mod installer</string>
 
     <!-- Error messages -->
-    <string name="error_fatal">MJLauncher has unexpectedly crashed</string>
+    <string name="error_fatal">MojavLauncher has unexpectedly crashed</string>
     <string name="error_no_version">No version!</string>
     <string name="error_show_more">Show more</string>
     <string name="error_show_less">Show less</string>
@@ -276,7 +276,7 @@
     <string name="preference_gyro_sample_rate_description">If you have performance issues with gyroscope controls, increase this.</string>
     <string name="microsoft_login_retry_later">Too many requests, please try again later.</string>
     <string name="microsoft_login_generic">Error: %s</string>
-    <string name="storage_required">MJLauncher requires external storage to be attached. Please reconnect it and restart the app.</string>
+    <string name="storage_required">MojavLauncher requires external storage to be attached. Please reconnect it and restart the app.</string>
     <string name="mcl_setting_title_buttonallcaps">Only use capital letters in button labels</string>
     <string name="mcl_setting_subtitle_buttonallcaps">Disable this if you want to use lowercase letters in your controls.</string>
     <string name="create_instance">Create new instance</string>
@@ -381,7 +381,7 @@
     <string name="preference_category_miscellaneous">Miscellaneous settings</string>
     <string name="preference_category_video">Video settings</string>
     <string name="notification_permission_dialog_title">Permission request</string>
-    <string name="notification_permission_dialog_text">MJLauncher requires a permission to post notifications to prevent game/modpack downloads from stopping when you leave the app. Without this permission, Android may shut down your downloads when you put MJLauncher in background mode.</string>
+    <string name="notification_permission_dialog_text">MojavLauncher requires a permission to post notifications to prevent game/modpack downloads from stopping when you leave the app. Without this permission, Android may shut down your downloads when you put MojavLauncher in background mode.</string>
     <string name="notification_permission_toast">You can always change your mind later by going into Settings</string>
     <string name="preference_ask_for_notification_title">Allow notifications</string>
     <string name="preference_ask_for_notification_description">Click to re-request the notification permission, required for game/modpack background downloads to work properly.</string>
@@ -544,7 +544,7 @@
     <string name="pref_blocklist_disable_title">Disable server blocklist</string>
     <string name="pref_blocklist_disable_description">Prevent the MC server blocklist from loading. This allows you to play on blocked servers (like 6b6t.org)</string>
     <string name="driver_default_name">Built-in driver</string>
-    <string name="driver_default_extra_name">MJLauncher</string>
+    <string name="driver_default_extra_name">MojavLauncher</string>
     <string name="driver_config_title">Installed Drivers</string>
     <string name="driver_config_pref_title">Vulkan Driver</string>
     <string name="driver_config_pref_subtitle">Manage installed AdrenoTools Vulkan drivers and install new</string>
@@ -575,4 +575,42 @@
     <string name="preference_icon_style_title">Icon style</string>
     <string name="preference_language_title">Language</string>
     <string name="language_system_default">System default</string>
+    <string name="main_transfer_title">Transfer</string>
+    <string name="main_help_title">Help</string>
+    <string name="preference_migration_title">Transfer data</string>
+    <string name="preference_migration_description">Import worlds, mods and settings from Mojo or Pojav</string>
+    <string name="migration_info_summary">Pick the game folder of your old launcher: for Pojav it is usually games/PojavLauncher/.minecraft, for Mojo the folder of the profile. Existing files are never overwritten.</string>
+    <string name="preference_category_migration_what">What to transfer</string>
+    <string name="migration_opt_worlds">Worlds (saves)</string>
+    <string name="migration_opt_worlds_summary">Off by default, can take a lot of space</string>
+    <string name="migration_opt_mods">Mods</string>
+    <string name="migration_opt_resourcepacks">Resource packs</string>
+    <string name="migration_opt_shaders">Shader packs</string>
+    <string name="migration_opt_screenshots">Screenshots</string>
+    <string name="migration_opt_settings">Game settings and servers</string>
+    <string name="migration_opt_versions">Installed versions</string>
+    <string name="migration_start_title">Choose folder and transfer</string>
+    <string name="migration_start_summary">Select the game folder of the old launcher</string>
+    <string name="migration_full_title">Full copy from another Mojo</string>
+    <string name="migration_full_summary">All data including accounts and profiles (Mojo only)</string>
+    <string name="migration_confirm_title">Start transfer?</string>
+    <string name="migration_confirm_message">The selected items will be copied into the current profile. Existing files are not overwritten.</string>
+    <string name="migration_not_found">This does not look like a game folder. Pick the folder that contains saves, mods or versions.</string>
+    <string name="migration_nothing_selected">Select at least one item to transfer</string>
+    <string name="migration_done">Transfer finished: %1$d copied, %2$d skipped</string>
+    <string name="migration_no_space">Not enough free space for the transfer</string>
+    <string name="preference_restore_optimal_title">Restore optimal settings</string>
+    <string name="preference_restore_optimal_summary">Reset graphics and performance options to the values picked for this device</string>
+    <string name="restore_optimal_confirm_message">Graphics and performance options will be reset to the values picked for your device. Continue?</string>
+    <string name="restore_optimal_done">Optimal settings restored</string>
+    <string name="help_title">Help and tools</string>
+    <string name="help_description">Guide, links, logs and .jar installer</string>
+    <string name="help_guide_title">How to use the launcher</string>
+    <string name="help_offer_title">Welcome!</string>
+    <string name="help_offer_message">Want a quick tour of the launcher? You can open it any time in Settings → Help and tools.</string>
+    <string name="help_offer_yes">Show me</string>
+    <string name="help_offer_no">Not now</string>
+    <string name="help_guide_summary">A short tour of the main features</string>
+    <string name="preference_category_migration_full">Full copy</string>
+    <string name="help_guide_text">1. Pick a profile or version at the bottom and press Play.\n2. Tap your name at the top to sign in or switch accounts.\n3. Low FPS? Open Settings → Video and renderer and tap Restore optimal settings.\n4. Custom controls lets you move and resize the on-screen buttons.\n5. Transfer brings worlds, mods and settings from Mojo or Pojav.\n6. Settings → Customization changes the language, accent color and icons.\n7. Open game directory shows the worlds, mods and resource packs of the profile.\n8. If the game crashes, share the log from Settings → Help and tools.</string>
 </resources>

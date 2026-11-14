@@ -5,10 +5,13 @@ import android.content.SharedPreferences;
 import android.content.pm.PackageManager;
 import android.os.Build;
 import android.os.Bundle;
+import android.widget.Toast;
 
 import androidx.activity.result.ActivityResultLauncher;
+import androidx.appcompat.app.AlertDialog;
 import androidx.preference.ListPreference;
 import androidx.preference.Preference;
+import androidx.preference.PreferenceManager;
 import androidx.preference.SwitchPreferenceCompat;
 
 import git.artdeell.mojo.BuildConfig;
@@ -19,6 +22,7 @@ import git.artdeell.mojo.game.renderer.RendererCache;
 import git.artdeell.mojo.game.renderer.extra.GLESProvider;
 import git.artdeell.mojo.prefs.CustomSeekBarPreference;
 import git.artdeell.mojo.prefs.LauncherPreferences;
+import git.artdeell.mojo.utils.DeviceProfile;
 import git.artdeell.mojo.utils.GpuUtils;
 import git.artdeell.mojo.vulkan.DriverInstaller;
 import git.artdeell.mojo.vulkan.DriverManager;
@@ -32,6 +36,16 @@ import git.artdeell.mojo.vulkan.ui.DriverConfigDialog;
 public class LauncherPreferenceVideoFragment extends LauncherPreferenceFragment {
     private Boolean hasAngle = null;
 
+    private void restoreOptimal() {
+        Activity activity = getActivity();
+        if (activity == null) return;
+        DeviceProfile.restoreOptimalSettings(PreferenceManager.getDefaultSharedPreferences(activity));
+        LauncherPreferences.loadPreferences(activity);
+        Toast.makeText(activity, R.string.restore_optimal_done, Toast.LENGTH_SHORT).show();
+        // Rebuild the screen so every switch and slider shows the restored value
+        activity.recreate();
+    }
+
     private DriverConfigDialog mDialogScreen;
     private final ActivityResultLauncher<Object> mInstallDriver =
             registerForActivityResult(new OpenDocumentWithExtension("zip"), data -> {
@@ -40,6 +54,15 @@ public class LauncherPreferenceVideoFragment extends LauncherPreferenceFragment 
     @Override
     public void onCreatePreferences(Bundle b, String str) {
         addPreferencesFromResource(R.xml.pref_video);
+        requirePreference("restoreOptimal").setOnPreferenceClickListener(preference -> {
+            new AlertDialog.Builder(requireActivity())
+                    .setTitle(R.string.preference_restore_optimal_title)
+                    .setMessage(R.string.restore_optimal_confirm_message)
+                    .setPositiveButton(android.R.string.ok, (d, w) -> restoreOptimal())
+                    .setNegativeButton(android.R.string.cancel, null)
+                    .show();
+            return true;
+        });
         int resolution = (int) (LauncherPreferences.PREF_SCALE_FACTOR * 100);
 
         CustomSeekBarPreference resolutionSeekbar = requirePreference("resolutionRatio",

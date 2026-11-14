@@ -12,7 +12,7 @@
     <!-- AlertDialog title -->
     <string name="alerttitle_installmod">Mod quraşdırıcısını seçin</string>
     <!-- Error messages -->
-    <string name="error_fatal">MJLauncher gözlənilmədən çökdü</string>
+    <string name="error_fatal">MojavLauncher gözlənilmədən çökdü</string>
     <string name="error_no_version">Versiya yoxdur!</string>
     <string name="error_show_more">Daha çox göstər</string>
     <string name="error_show_less">Daha az göstər</string>
@@ -227,7 +227,7 @@
     <string name="preference_gyro_sample_rate_title">Gyroskopdan nümunə götürmə dərəcəsi</string>
     <string name="preference_gyro_sample_rate_description">Giroskop idarəetmələri ilə bağlı performans probleminiz varsa, bunu artırın.</string>
     <string name="microsoft_login_retry_later">Həddindən artıq sorğu var, sonra yenidən cəhd edin.</string>
-    <string name="storage_required">MJLauncher xarici yaddaşın əlavə edilməsini tələb edir. Lütfən, onu yenidən qoşun və proqramı yenidən başladın.</string>
+    <string name="storage_required">MojavLauncher xarici yaddaşın əlavə edilməsini tələb edir. Lütfən, onu yenidən qoşun və proqramı yenidən başladın.</string>
     <string name="mcl_setting_title_buttonallcaps">Düymə etiketlərində yalnız böyük hərflərdən istifadə edin</string>
     <string name="mcl_setting_subtitle_buttonallcaps">İdarəetmə elementlərində kiçik hərflərdən istifadə etmək istəyirsinizsə, bunu söndürün.</string>
     <string name="preference_shader_dump_title">Kölgələndirici boşaltmanı aktivləşdir</string>
@@ -306,7 +306,7 @@
     <string name="preference_category_miscellaneous">Müxtəlif parametrlər</string>
     <string name="preference_category_video">Video parametrləri</string>
     <string name="notification_permission_dialog_title">İcazə sorğusu</string>
-    <string name="notification_permission_dialog_text">MJLauncher, proqramı tərk etdiyiniz zaman oyun/mod paketi yükləmələrinin dayandırılmasının qarşısını almaq məqsədilə bildirişlər göndərmək üçün icazə tələb edir. Bu icazə olmadan MJLauncher-i fon rejiminə keçirdiyiniz zaman Android, yükləmələrinizi bağlaya bilər.</string>
+    <string name="notification_permission_dialog_text">MojavLauncher, proqramı tərk etdiyiniz zaman oyun/mod paketi yükləmələrinin dayandırılmasının qarşısını almaq məqsədilə bildirişlər göndərmək üçün icazə tələb edir. Bu icazə olmadan MojavLauncher-i fon rejiminə keçirdiyiniz zaman Android, yükləmələrinizi bağlaya bilər.</string>
     <string name="notification_permission_toast">Daha sonra Parametrlərə daxil olaraq fikrinizi dəyişə bilərsiniz</string>
     <string name="preference_ask_for_notification_title">Bildirişlərə icazə verin</string>
     <string name="preference_ask_for_notification_description">Oyun/modpack fon yükləmələrinin düzgün işləməsi üçün tələb olunan bildiriş icazəsini yenidən tələb etmək üçün klikləyin.</string>
@@ -332,4 +332,42 @@
     <string name="preference_language_title">Dil</string>
     <string name="language_system_default">Sistem standartı</string>
     <string name="mcl_button_open_directory">Oyun qovluğunu aç</string>
+    <string name="main_transfer_title">Köçürmə</string>
+    <string name="main_help_title">Kömək</string>
+    <string name="preference_migration_title">Məlumatların köçürülməsi</string>
+    <string name="preference_migration_description">Mojo və ya Pojav-dan dünyaları, modları və parametrləri idxal edin</string>
+    <string name="migration_info_summary">Köhnə launcherin oyun qovluğunu seçin: Pojav-da bu adətən games/PojavLauncher/.minecraft, Mojo-da isə profil qovluğudur. Mövcud fayllar üzərinə yazılmır.</string>
+    <string name="preference_category_migration_what">Nə köçürülsün</string>
+    <string name="migration_opt_worlds">Dünyalar (saves)</string>
+    <string name="migration_opt_worlds_summary">Standart olaraq söndürülüb, çox yer tuta bilər</string>
+    <string name="migration_opt_mods">Modlar</string>
+    <string name="migration_opt_resourcepacks">Resurs paketləri</string>
+    <string name="migration_opt_shaders">Şeyder paketləri</string>
+    <string name="migration_opt_screenshots">Ekran görüntüləri</string>
+    <string name="migration_opt_settings">Oyun parametrləri və serverlər</string>
+    <string name="migration_opt_versions">Quraşdırılmış versiyalar</string>
+    <string name="migration_start_title">Qovluğu seçin və köçürün</string>
+    <string name="migration_start_summary">Köhnə launcherin oyun qovluğunu göstərin</string>
+    <string name="migration_full_title">Başqa Mojo-dan tam surət</string>
+    <string name="migration_full_summary">Bütün məlumatlar, o cümlədən hesablar və profillər (yalnız Mojo)</string>
+    <string name="migration_confirm_title">Köçürmə başlansın?</string>
+    <string name="migration_confirm_message">Seçilənlər cari profilə kopyalanacaq. Mövcud fayllar üzərinə yazılmır.</string>
+    <string name="migration_not_found">Bu oyun qovluğuna oxşamır. saves, mods və ya versions olan qovluğu seçin.</string>
+    <string name="migration_nothing_selected">Köçürmək üçün ən azı bir element seçin</string>
+    <string name="migration_done">Köçürmə bitdi: %1$d kopyalandı, %2$d ötürüldü</string>
+    <string name="migration_no_space">Köçürmə üçün kifayət qədər boş yer yoxdur</string>
+    <string name="preference_restore_optimal_title">Optimal parametrləri bərpa et</string>
+    <string name="preference_restore_optimal_summary">Qrafika və performans parametrlərini bu cihaz üçün seçilmiş dəyərlərə qaytarın</string>
+    <string name="restore_optimal_confirm_message">Qrafika və performans parametrləri cihazınız üçün seçilmiş dəyərlərə qaytarılacaq. Davam edilsin?</string>
+    <string name="restore_optimal_done">Optimal parametrlər bərpa edildi</string>
+    <string name="help_title">Kömək və alətlər</string>
+    <string name="help_description">Bələdçi, keçidlər, jurnal və .jar quraşdırıcısı</string>
+    <string name="help_guide_title">Launcherdən necə istifadə etməli</string>
+    <string name="help_offer_title">Xoş gəlmisiniz!</string>
+    <string name="help_offer_message">Launcher üzrə qısa tur istəyirsiniz? Onu istənilən vaxt aça bilərsiniz: Parametrlər → Kömək və alətlər.</string>
+    <string name="help_offer_yes">Göstər</string>
+    <string name="help_offer_no">İndi yox</string>
+    <string name="help_guide_summary">Əsas funksiyalar üzrə qısa tur</string>
+    <string name="preference_category_migration_full">Tam surət</string>
+    <string name="help_guide_text">1. Aşağıdan profil və ya versiya seçin və Oyna düyməsini basın.\n2. Daxil olmaq və ya hesabı dəyişmək üçün yuxarıdakı adınıza toxunun.\n3. FPS aşağıdır? Parametrlər → Video və renderer bölməsini açın və Optimal parametrləri bərpa et düyməsini basın.\n4. Fərdi idarəetmələr ekrandakı düymələri hərəkət etdirməyə və ölçüsünü dəyişməyə imkan verir.\n5. Köçürmə Mojo və ya Pojav-dan dünyaları, modları və parametrləri gətirir.\n6. Parametrlər → Fərdiləşdirmə dili, vurğu rəngini və ikonları dəyişir.\n7. Oyun qovluğunu aç profilin dünyalarını, modlarını və resurs paketlərini göstərir.\n8. Oyun çökərsə, jurnalı göndərin: Parametrlər → Kömək və alətlər.</string>
 </resources>

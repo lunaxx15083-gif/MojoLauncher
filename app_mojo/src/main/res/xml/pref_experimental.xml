@@ -12,6 +12,7 @@
 
         <SwitchPreferenceCompat
             android:key="dump_shaders"
+            app2:isPreferenceVisible="false"
             android:title="@string/preference_shader_dump_title"
             android:summary="@string/preference_shader_dump_description"
             />

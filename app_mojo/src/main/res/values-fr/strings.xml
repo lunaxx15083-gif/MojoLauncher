@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
     <!-- App name part -->
-    <string name="app_short_name">MJLauncher</string>
+    <string name="app_short_name">MojavLauncher</string>
     <!-- Action bar part -->
     <!-- Languages list part -->
     <!-- Login strings -->
@@ -14,7 +14,7 @@
     <!-- AlertDialog title -->
     <string name="alerttitle_installmod">Sélectionnez un installateur de mods</string>
     <!-- Error messages -->
-    <string name="error_fatal">MJLauncher a cessé de fonctionner de façon inattendue</string>
+    <string name="error_fatal">MojavLauncher a cessé de fonctionner de façon inattendue</string>
     <string name="error_no_version">Aucune version !</string>
     <string name="error_show_more">Afficher plus</string>
     <string name="error_show_less">Afficher moins</string>
@@ -232,7 +232,7 @@
     <string name="preference_gyro_sample_rate_title">Taux d\'échantillonnage du gyroscope</string>
     <string name="preference_gyro_sample_rate_description">Si vous avez des problèmes de performance avec les commandes du gyroscope, augmentez cette valeur.</string>
     <string name="microsoft_login_retry_later">Trop de requêtes, s\'il vous plaît réessayez plus tard.</string>
-    <string name="storage_required">MJLauncher nécessite que le stockage externe soit connecté. Veuillez le reconnecter et redémarrer l\'application.</string>
+    <string name="storage_required">MojavLauncher nécessite que le stockage externe soit connecté. Veuillez le reconnecter et redémarrer l\'application.</string>
     <string name="mcl_setting_title_buttonallcaps">N\'utilisez que des lettres majuscules dans les libellés des boutons</string>
     <string name="mcl_setting_subtitle_buttonallcaps">Désactivez cette option si vous souhaitez utiliser des lettres minuscules dans vos contrôles.</string>
     <string name="preference_shader_dump_title">Activer le dumping du shader</string>
@@ -312,7 +312,7 @@
     <string name="preference_category_miscellaneous">Paramètres divers</string>
     <string name="preference_category_video">Paramètres vidéo</string>
     <string name="notification_permission_dialog_title">Demande de permission</string>
-    <string name="notification_permission_dialog_text">MJLauncher a besoin d\'une autorisation pour afficher des notifications afin d\'éviter que les téléchargements de jeux/modpacks ne s\'arrêtent lorsque vous quittez l\'application. Sans cette autorisation, Android peut interrompre vos téléchargements lorsque vous mettez MJLauncher en mode arrière-plan.</string>
+    <string name="notification_permission_dialog_text">MojavLauncher a besoin d\'une autorisation pour afficher des notifications afin d\'éviter que les téléchargements de jeux/modpacks ne s\'arrêtent lorsque vous quittez l\'application. Sans cette autorisation, Android peut interrompre vos téléchargements lorsque vous mettez MojavLauncher en mode arrière-plan.</string>
     <string name="notification_permission_toast">Vous pouvez toujours changer d\'avis plus tard en allant dans Paramètres</string>
     <string name="preference_ask_for_notification_title">Autoriser les notifications</string>
     <string name="preference_ask_for_notification_description">Cliquez sur ce bouton pour redemander l\'autorisation de notification, nécessaire au bon fonctionnement des téléchargements en arrière-plan des jeux/modpacks.</string>
@@ -370,4 +370,42 @@
     <string name="preference_language_title">Langue</string>
     <string name="language_system_default">Par défaut du système</string>
     <string name="mcl_button_open_directory">Ouvrir le dossier du jeu</string>
+    <string name="main_transfer_title">Transfert</string>
+    <string name="main_help_title">Aide</string>
+    <string name="preference_migration_title">Transférer les données</string>
+    <string name="preference_migration_description">Importer mondes, mods et réglages depuis Mojo ou Pojav</string>
+    <string name="migration_info_summary">Choisissez le dossier de jeu de votre ancien lanceur : pour Pojav, c\'est généralement games/PojavLauncher/.minecraft, pour Mojo le dossier du profil. Les fichiers existants ne sont jamais écrasés.</string>
+    <string name="preference_category_migration_what">Éléments à transférer</string>
+    <string name="migration_opt_worlds">Mondes (saves)</string>
+    <string name="migration_opt_worlds_summary">Désactivé par défaut, peut occuper beaucoup d\'espace</string>
+    <string name="migration_opt_mods">Mods</string>
+    <string name="migration_opt_resourcepacks">Packs de ressources</string>
+    <string name="migration_opt_shaders">Packs de shaders</string>
+    <string name="migration_opt_screenshots">Captures d\'écran</string>
+    <string name="migration_opt_settings">Réglages du jeu et serveurs</string>
+    <string name="migration_opt_versions">Versions installées</string>
+    <string name="migration_start_title">Choisir le dossier et transférer</string>
+    <string name="migration_start_summary">Sélectionnez le dossier de jeu de l\'ancien lanceur</string>
+    <string name="migration_full_title">Copie complète depuis un autre Mojo</string>
+    <string name="migration_full_summary">Toutes les données, comptes et profils inclus (Mojo uniquement)</string>
+    <string name="migration_confirm_title">Lancer le transfert ?</string>
+    <string name="migration_confirm_message">Les éléments sélectionnés seront copiés dans le profil actuel. Les fichiers existants ne sont pas écrasés.</string>
+    <string name="migration_not_found">Ceci ne ressemble pas à un dossier de jeu. Choisissez le dossier contenant saves, mods ou versions.</string>
+    <string name="migration_nothing_selected">Sélectionnez au moins un élément à transférer</string>
+    <string name="migration_done">Transfert terminé : %1$d copiés, %2$d ignorés</string>
+    <string name="migration_no_space">Pas assez d\'espace libre pour le transfert</string>
+    <string name="preference_restore_optimal_title">Rétablir les réglages optimaux</string>
+    <string name="preference_restore_optimal_summary">Réinitialise les options graphiques et de performance aux valeurs choisies pour cet appareil</string>
+    <string name="restore_optimal_confirm_message">Les options graphiques et de performance seront réinitialisées aux valeurs choisies pour votre appareil. Continuer ?</string>
+    <string name="restore_optimal_done">Réglages optimaux rétablis</string>
+    <string name="help_title">Aide et outils</string>
+    <string name="help_description">Guide, liens, journal et installateur .jar</string>
+    <string name="help_guide_title">Comment utiliser le lanceur</string>
+    <string name="help_offer_title">Bienvenue !</string>
+    <string name="help_offer_message">Voulez-vous une visite rapide du lanceur ? Vous pouvez l\'ouvrir à tout moment : Paramètres → Aide et outils.</string>
+    <string name="help_offer_yes">Montrer</string>
+    <string name="help_offer_no">Pas maintenant</string>
+    <string name="help_guide_summary">Un bref tour des fonctions principales</string>
+    <string name="preference_category_migration_full">Copie complète</string>
+    <string name="help_guide_text">1. Choisissez un profil ou une version en bas puis appuyez sur Jouer.\n2. Touchez votre nom en haut pour vous connecter ou changer de compte.\n3. Peu de FPS ? Ouvrez Paramètres → Vidéo et moteur de rendu et appuyez sur Rétablir les réglages optimaux.\n4. Contrôles personnalisés permet de déplacer et de redimensionner les boutons à l\'écran.\n5. Transfert importe les mondes, mods et réglages depuis Mojo ou Pojav.\n6. Paramètres → Personnalisation change la langue, la couleur d\'accent et les icônes.\n7. Ouvrir le dossier du jeu affiche les mondes, mods et packs de ressources du profil.\n8. Si le jeu plante, partagez le journal : Paramètres → Aide et outils.</string>
 </resources>

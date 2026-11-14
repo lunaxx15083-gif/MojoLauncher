@@ -5,6 +5,12 @@
     <git.artdeell.mojo.prefs.BackButtonPreference />
 
     <PreferenceCategory android:title="@string/preference_category_video" >
+        <Preference
+            android:key="restoreOptimal"
+            android:icon="@drawable/ic_px_zap"
+            android:summary="@string/preference_restore_optimal_summary"
+            android:title="@string/preference_restore_optimal_title"/>
+
         <androidx.preference.ListPreference
             android:title="@string/mcl_setting_category_renderer"
             android:key="renderer"

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
     <!-- App name part -->
-    <string name="app_short_name">MJLauncher</string>
+    <string name="app_short_name">MojavLauncher</string>
     <!-- Action bar part -->
     <!-- Languages list part -->
     <!-- Login strings -->
@@ -12,7 +12,7 @@
     <!-- AlertDialog title -->
     <string name="alerttitle_installmod">Мод орнатқыш таңдау</string>
     <!-- Error messages -->
-    <string name="error_fatal">MJLauncher кенет іркілді</string>
+    <string name="error_fatal">MojavLauncher кенет іркілді</string>
     <string name="error_no_version">Нұсқа жоқ!</string>
     <string name="error_show_more">Көрсету</string>
     <string name="error_show_less">Жасыру</string>
@@ -131,4 +131,42 @@
     <string name="preference_category_java_tweaks">Java баптаулары</string>
     <string name="preference_category_buttons">Түймелер</string>
     <string name="preference_category_gestures">Ым-ишаралар</string>
+    <string name="main_transfer_title">Көшіру</string>
+    <string name="main_help_title">Көмек</string>
+    <string name="preference_migration_title">Деректерді көшіру</string>
+    <string name="preference_migration_description">Mojo немесе Pojav-тан әлемдерді, модтарды және баптауларды импорттау</string>
+    <string name="migration_info_summary">Ескі лаунчердің ойын қалтасын таңдаңыз: Pojav-та ол әдетте games/PojavLauncher/.minecraft, Mojo-да профиль қалтасы. Бар файлдар қайта жазылмайды.</string>
+    <string name="preference_category_migration_what">Нені көшіру керек</string>
+    <string name="migration_opt_worlds">Әлемдер (saves)</string>
+    <string name="migration_opt_worlds_summary">Әдепкіде өшірулі, көп орын алуы мүмкін</string>
+    <string name="migration_opt_mods">Модтар</string>
+    <string name="migration_opt_resourcepacks">Ресурс пакеттері</string>
+    <string name="migration_opt_shaders">Шейдерлер</string>
+    <string name="migration_opt_screenshots">Скриншоттар</string>
+    <string name="migration_opt_settings">Ойын баптаулары және серверлер</string>
+    <string name="migration_opt_versions">Орнатылған нұсқалар</string>
+    <string name="migration_start_title">Қалтаны таңдап көшіру</string>
+    <string name="migration_start_summary">Ескі лаунчердің ойын қалтасын көрсетіңіз</string>
+    <string name="migration_full_title">Басқа Mojo-дан толық көшірме</string>
+    <string name="migration_full_summary">Барлық деректер, тіркелгілер мен профильдерді қоса (тек Mojo)</string>
+    <string name="migration_confirm_title">Көшіруді бастау керек пе?</string>
+    <string name="migration_confirm_message">Таңдалғандар ағымдағы профильге көшіріледі. Бар файлдар қайта жазылмайды.</string>
+    <string name="migration_not_found">Бұл ойын қалтасына ұқсамайды. saves, mods немесе versions бар қалтаны таңдаңыз.</string>
+    <string name="migration_nothing_selected">Көшіру үшін кемінде бір тармақты таңдаңыз</string>
+    <string name="migration_done">Көшіру аяқталды: %1$d көшірілді, %2$d өткізілді</string>
+    <string name="migration_no_space">Көшіру үшін бос орын жеткіліксіз</string>
+    <string name="preference_restore_optimal_title">Оңтайлы баптауларды қалпына келтіру</string>
+    <string name="preference_restore_optimal_summary">Графика мен өнімділік параметрлерін осы құрылғыға таңдалған мәндерге қайтару</string>
+    <string name="restore_optimal_confirm_message">Графика мен өнімділік параметрлері құрылғыңызға таңдалған мәндерге қайтарылады. Жалғастыру керек пе?</string>
+    <string name="restore_optimal_done">Оңтайлы баптаулар қалпына келтірілді</string>
+    <string name="help_title">Көмек және құралдар</string>
+    <string name="help_description">Нұсқаулық, сілтемелер, журнал және .jar орнатқышы</string>
+    <string name="help_guide_title">Лаунчерді қалай пайдалану керек</string>
+    <string name="help_offer_title">Қош келдіңіз!</string>
+    <string name="help_offer_message">Лаунчер бойынша қысқаша шолу керек пе? Оны кез келген уақытта ашуға болады: Баптаулар → Көмек және құралдар.</string>
+    <string name="help_offer_yes">Көрсету</string>
+    <string name="help_offer_no">Қазір емес</string>
+    <string name="help_guide_summary">Негізгі функциялар бойынша қысқаша шолу</string>
+    <string name="preference_category_migration_full">Толық көшірме</string>
+    <string name="help_guide_text">1. Төменнен профильді немесе нұсқаны таңдап, Ойнау түймесін басыңыз.\n2. Жүйеге кіру немесе тіркелгіні ауыстыру үшін жоғарыдағы атыңызды басыңыз.\n3. FPS төмен бе? Баптаулар → Бейне және рендерер ашып, Оңтайлы баптауларды қалпына келтіру басыңыз.\n4. Өңделген басқару экрандағы түймелерді жылжытуға және өлшемін өзгертуге мүмкіндік береді.\n5. Көшіру Mojo немесе Pojav-тан әлемдерді, модтарды және баптауларды әкеледі.\n6. Баптаулар → Дербес баптау тілді, акцент түсін және белгішелерді өзгертеді.\n7. Ойын қалтасын ашу профильдің әлемдерін, модтарын және ресурс пакеттерін көрсетеді.\n8. Ойын құлап қалса, журналды жіберіңіз: Баптаулар → Көмек және құралдар.</string>
 </resources>

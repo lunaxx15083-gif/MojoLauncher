@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
 <!-- App name part -->
-    <string name="app_short_name">MJLauncher</string>
+    <string name="app_short_name">MojavLauncher</string>
 
     <!-- Action bar part -->
 
@@ -20,7 +20,7 @@
     <string name="alerttitle_installmod">Chọn một trình cài đặt mod</string>
 
     <!-- Error messages -->
-    <string name="error_fatal">MJLauncher đã bất ngờ bị sập</string>
+    <string name="error_fatal">MojavLauncher đã bất ngờ bị sập</string>
     <string name="error_no_version">Không có phiên bản nào!</string>
     <string name="error_show_more">Hiển thị thêm</string>
     <string name="error_show_less">Hiển thị ít hơn</string>
@@ -261,7 +261,7 @@
     <string name="preference_gyro_sample_rate_title">Tốc độ lấy mẫu con quay hồi chuyển</string>
     <string name="preference_gyro_sample_rate_description">..</string>
     <string name="microsoft_login_retry_later">Có quá nhiều yêu cầu, vui lòng thử lại sau.</string>
-    <string name="storage_required">MJLauncher cần kho dữ liệu bên ngoài để gắn vào. Vui lòng kết nối lại và khởi động lại ứng dụng.</string>
+    <string name="storage_required">MojavLauncher cần kho dữ liệu bên ngoài để gắn vào. Vui lòng kết nối lại và khởi động lại ứng dụng.</string>
     <string name="mcl_setting_title_buttonallcaps">Chỉ được dùng những chữ cái in hoa trong các nhãn nút</string>
     <string name="mcl_setting_subtitle_buttonallcaps">Tắt đi nếu bạn muốn sử dụng chữ cái thường trong mục điều khiển.</string>
     <string name="preference_shader_dump_title">Kích hoạt đổ bóng</string>
@@ -358,7 +358,7 @@
     <string name="preference_category_miscellaneous">Các cài đặt khác</string>
     <string name="preference_category_video">Cài Đặt Đồ Họa</string>
     <string name="notification_permission_dialog_title">Yêu Cầu Quyền Truy Cập</string>
-    <string name="notification_permission_dialog_text">MJLauncher yêu cầu quyền để gửi thông báo để ngăn chặn việc tải xuống trò chơi/modpacks dừng lại khi bạn rời khỏi ứng dụng. Nếu không cấp quyền, Android có thể ngắt quá trình tải khi bạn để MJLauncher ở chế độ nền.</string>
+    <string name="notification_permission_dialog_text">MojavLauncher yêu cầu quyền để gửi thông báo để ngăn chặn việc tải xuống trò chơi/modpacks dừng lại khi bạn rời khỏi ứng dụng. Nếu không cấp quyền, Android có thể ngắt quá trình tải khi bạn để MojavLauncher ở chế độ nền.</string>
     <string name="notification_permission_toast">Bạn luôn có thể thay đổi ý định của mình bằng cách vào Cài đặt</string>
     <string name="preference_ask_for_notification_title">Cho phép Gửi thông báo</string>
     <string name="preference_ask_for_notification_description">Nhấp để yêu cầu lại quyền thông báo, điều này là cần thiết để trò chơi/gói tích hợp tải xuống bình thường ở chế độ nền.</string>
@@ -438,4 +438,42 @@
     <string name="preference_device_info_summary">SoC: %1$s\nGPU: %2$s\nOpenGL ES: %3$d\nSố nhân CPU: %4$d\nRAM: %5$d MB</string>
     <string name="preference_language_title">Ngôn ngữ</string>
     <string name="language_system_default">Mặc định hệ thống</string>
+    <string name="main_transfer_title">Chuyển dữ liệu</string>
+    <string name="main_help_title">Trợ giúp</string>
+    <string name="preference_migration_title">Chuyển dữ liệu</string>
+    <string name="preference_migration_description">Nhập thế giới, mod và cài đặt từ Mojo hoặc Pojav</string>
+    <string name="migration_info_summary">Chọn thư mục game của trình khởi chạy cũ: với Pojav thường là games/PojavLauncher/.minecraft, với Mojo là thư mục của hồ sơ. Các tệp đã có sẽ không bị ghi đè.</string>
+    <string name="preference_category_migration_what">Chuyển những gì</string>
+    <string name="migration_opt_worlds">Thế giới (saves)</string>
+    <string name="migration_opt_worlds_summary">Mặc định tắt, có thể chiếm nhiều dung lượng</string>
+    <string name="migration_opt_mods">Mod</string>
+    <string name="migration_opt_resourcepacks">Gói tài nguyên</string>
+    <string name="migration_opt_shaders">Gói shader</string>
+    <string name="migration_opt_screenshots">Ảnh chụp màn hình</string>
+    <string name="migration_opt_settings">Cài đặt game và máy chủ</string>
+    <string name="migration_opt_versions">Phiên bản đã cài</string>
+    <string name="migration_start_title">Chọn thư mục và chuyển</string>
+    <string name="migration_start_summary">Chọn thư mục game của trình khởi chạy cũ</string>
+    <string name="migration_full_title">Sao chép đầy đủ từ Mojo khác</string>
+    <string name="migration_full_summary">Toàn bộ dữ liệu, gồm tài khoản và hồ sơ (chỉ Mojo)</string>
+    <string name="migration_confirm_title">Bắt đầu chuyển?</string>
+    <string name="migration_confirm_message">Các mục đã chọn sẽ được sao chép vào hồ sơ hiện tại. Các tệp đã có sẽ không bị ghi đè.</string>
+    <string name="migration_not_found">Đây không giống thư mục game. Hãy chọn thư mục có saves, mods hoặc versions.</string>
+    <string name="migration_nothing_selected">Hãy chọn ít nhất một mục để chuyển</string>
+    <string name="migration_done">Đã chuyển xong: sao chép %1$d, bỏ qua %2$d</string>
+    <string name="migration_no_space">Không đủ dung lượng trống để chuyển</string>
+    <string name="preference_restore_optimal_title">Khôi phục cài đặt tối ưu</string>
+    <string name="preference_restore_optimal_summary">Đặt lại tuỳ chọn đồ hoạ và hiệu năng về giá trị được chọn cho thiết bị này</string>
+    <string name="restore_optimal_confirm_message">Tuỳ chọn đồ hoạ và hiệu năng sẽ được đặt lại về giá trị được chọn cho thiết bị của bạn. Tiếp tục?</string>
+    <string name="restore_optimal_done">Đã khôi phục cài đặt tối ưu</string>
+    <string name="help_title">Trợ giúp và công cụ</string>
+    <string name="help_description">Hướng dẫn, liên kết, nhật ký và trình cài .jar</string>
+    <string name="help_guide_title">Cách dùng trình khởi chạy</string>
+    <string name="help_offer_title">Chào mừng!</string>
+    <string name="help_offer_message">Bạn muốn xem hướng dẫn nhanh về trình khởi chạy? Bạn có thể mở bất cứ lúc nào: Cài đặt → Trợ giúp và công cụ.</string>
+    <string name="help_offer_yes">Xem ngay</string>
+    <string name="help_offer_no">Để sau</string>
+    <string name="help_guide_summary">Giới thiệu nhanh các tính năng chính</string>
+    <string name="preference_category_migration_full">Sao chép đầy đủ</string>
+    <string name="help_guide_text">1. Chọn hồ sơ hoặc phiên bản ở phía dưới rồi nhấn Chơi.\n2. Chạm vào tên của bạn ở phía trên để đăng nhập hoặc đổi tài khoản.\n3. FPS thấp? Mở Cài đặt → Hình ảnh và trình kết xuất và nhấn Khôi phục cài đặt tối ưu.\n4. Tùy chỉnh điều khiển cho phép di chuyển và đổi kích thước các nút trên màn hình.\n5. Chuyển dữ liệu đưa thế giới, mod và cài đặt từ Mojo hoặc Pojav sang.\n6. Cài đặt → Tùy biến thay đổi ngôn ngữ, màu nhấn và biểu tượng.\n7. Mở thư mục trò chơi hiển thị thế giới, mod và gói tài nguyên của hồ sơ.\n8. Nếu game bị thoát đột ngột, hãy chia sẻ nhật ký: Cài đặt → Trợ giúp và công cụ.</string>
 </resources>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app2="http://schemas.android.com/apk/res-auto">
+
+    <git.artdeell.mojo.prefs.BackButtonPreference />
+
+    <PreferenceCategory android:title="@string/preference_migration_title">
+        <Preference
+            android:key="migrationInfo"
+            android:icon="@drawable/ic_px_data_import"
+            android:persistent="false"
+            android:selectable="false"
+            android:summary="@string/migration_info_summary"
+            android:title="@string/main_transfer_title"/>
+        <Preference
+            android:key="migrationStart"
+            android:icon="@drawable/ic_px_folder"
+            android:summary="@string/migration_start_summary"
+            android:title="@string/migration_start_title"/>
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="@string/preference_category_migration_what">
+        <SwitchPreferenceCompat
+            android:defaultValue="false"
+            android:key="migrate_worlds"
+            android:title="@string/migration_opt_worlds"
+            android:summary="@string/migration_opt_worlds_summary"/>
+        <SwitchPreferenceCompat
+            android:defaultValue="true"
+            android:key="migrate_mods"
+            android:title="@string/migration_opt_mods"/>
+        <SwitchPreferenceCompat
+            android:defaultValue="true"
+            android:key="migrate_resourcepacks"
+            android:title="@string/migration_opt_resourcepacks"/>
+        <SwitchPreferenceCompat
+            android:defaultValue="true"
+            android:key="migrate_shaders"
+            android:title="@string/migration_opt_shaders"/>
+        <SwitchPreferenceCompat
+            android:defaultValue="false"
+            android:key="migrate_screenshots"
+            android:title="@string/migration_opt_screenshots"/>
+        <SwitchPreferenceCompat
+            android:defaultValue="true"
+            android:key="migrate_settings"
+            android:title="@string/migration_opt_settings"/>
+        <SwitchPreferenceCompat
+            android:defaultValue="true"
+            android:key="migrate_versions"
+            android:title="@string/migration_opt_versions"/>
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="@string/preference_category_migration_full">
+        <Preference
+            android:key="migrationFullMojo"
+            android:icon="@drawable/ic_px_data_import"
+            android:summary="@string/migration_full_summary"
+            android:title="@string/migration_full_title"/>
+    </PreferenceCategory>
+</PreferenceScreen>

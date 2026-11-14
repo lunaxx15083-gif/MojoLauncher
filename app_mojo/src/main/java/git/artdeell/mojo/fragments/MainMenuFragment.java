@@ -28,6 +28,8 @@ import git.artdeell.mojo.extra.ExtraConstants;
 import git.artdeell.mojo.extra.ExtraCore;
 import git.artdeell.mojo.instances.Instance;
 import git.artdeell.mojo.instances.Instances;
+import git.artdeell.mojo.prefs.screens.LauncherPreferenceMigrationFragment;
+import git.artdeell.mojo.utils.HelpGuide;
 import git.artdeell.mojo.utils.FileUtils;
 
 import java.io.File;
@@ -59,8 +61,9 @@ public class MainMenuFragment extends Fragment {
         Button mPlayButton = view.findViewById(R.id.play_button);
         mVersionSpinner = view.findViewById(R.id.mc_version_spinner);
 
-        mNewsButton.setOnClickListener(v -> Tools.openURL(requireActivity(), Tools.URL_HOME));
-        mDiscordButton.setOnClickListener(v -> Tools.openURL(requireActivity(), getString(R.string.social_media_invite)));
+        // The former wiki button is now "Transfer", the former social button is now "Help"
+        mNewsButton.setOnClickListener(v -> Tools.swapFragment(requireActivity(), LauncherPreferenceMigrationFragment.class, LauncherPreferenceMigrationFragment.TAG, null));
+        mDiscordButton.setOnClickListener(v -> HelpGuide.showGuide(requireActivity()));
         mCustomControlButton.setOnClickListener(v -> startActivity(new Intent(requireContext(), CustomControlsActivity.class)));
         mInstallJarButton.setOnClickListener(v -> runInstallerWithConfirmation());
         mEditProfileButton.setOnClickListener(v -> mVersionSpinner.openProfileEditor(requireActivity()));
@@ -72,9 +75,9 @@ public class MainMenuFragment extends Fragment {
         mOpenDirectoryButton.setOnClickListener((v)-> openGameDirectory(v.getContext()));
 
 
-        mNewsButton.setOnLongClickListener((v)->{
-            Tools.swapFragment(requireActivity(), GamepadMapperFragment.class, GamepadMapperFragment.TAG, null);
-            return true;
+        // Offer the quick tour once, on the very first launch
+        view.post(() -> {
+            if (isAdded()) HelpGuide.maybeOfferOnFirstRun(requireActivity());
         });
     }
 

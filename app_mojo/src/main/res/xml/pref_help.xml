@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app2="http://schemas.android.com/apk/res-auto">
+
+    <git.artdeell.mojo.prefs.BackButtonPreference />
+
+    <PreferenceCategory android:title="@string/help_title">
+        <Preference
+            android:key="helpGuide"
+            android:icon="@drawable/ic_px_book"
+            android:title="@string/help_guide_title"
+            android:summary="@string/help_guide_summary"/>
+        <Preference
+            android:key="helpWiki"
+            android:icon="@drawable/ic_px_home"
+            android:title="@string/mcl_tab_wiki"/>
+        <Preference
+            android:key="helpSocial"
+            android:icon="@drawable/ic_social_media"
+            android:title="@string/mcl_button_social_media"/>
+        <Preference
+            android:key="helpShareLogs"
+            android:icon="@drawable/ic_px_sharelog"
+            android:title="@string/main_share_logs"/>
+        <Preference
+            android:key="helpInstallJar"
+            android:icon="@drawable/ic_px_java_run"
+            android:title="@string/main_install_jar_file"/>
+    </PreferenceCategory>
+</PreferenceScreen>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
     <!-- App name part -->
-    <string name="app_short_name">MJLauncher</string>
+    <string name="app_short_name">MojavLauncher</string>
     <!-- Action bar part -->
     <!-- Languages list part -->
     <!-- Login strings -->
@@ -13,7 +13,7 @@
     <!-- AlertDialog title -->
     <string name="alerttitle_installmod">选择模组安装器</string>
     <!-- Error messages -->
-    <string name="error_fatal">MJLauncher 意外崩溃</string>
+    <string name="error_fatal">MojavLauncher 意外崩溃</string>
     <string name="error_no_version">无版本！</string>
     <string name="error_show_more">显示详情</string>
     <string name="error_show_less">隐藏细节</string>
@@ -231,7 +231,7 @@
     <string name="preference_gyro_sample_rate_title">陀螺仪采样率</string>
     <string name="preference_gyro_sample_rate_description">如果您在陀螺仪控制上遇到性能问题，请增加此值。</string>
     <string name="microsoft_login_retry_later">您的操作过于频繁，请稍后重试。</string>
-    <string name="storage_required">MJLauncher 需要连接外部存储，请重新连接并重启应用。</string>
+    <string name="storage_required">MojavLauncher 需要连接外部存储，请重新连接并重启应用。</string>
     <string name="mcl_setting_title_buttonallcaps">在按钮标签中仅使用大写字母</string>
     <string name="mcl_setting_subtitle_buttonallcaps">如果您想在按键中显示小写字母，请关闭此设置。</string>
     <string name="preference_shader_dump_title">启用着色器输出</string>
@@ -311,7 +311,7 @@
     <string name="preference_category_miscellaneous">其他设置</string>
     <string name="preference_category_video">视频设置</string>
     <string name="notification_permission_dialog_title">权限请求</string>
-    <string name="notification_permission_dialog_text">MJLauncher 需要获得通知权限，以防止在您离开应用时停止游戏或模组包的下载。没有这个权限，Android 可能会在您将 MJLauncher 置于后台模式时关闭您的下载。</string>
+    <string name="notification_permission_dialog_text">MojavLauncher 需要获得通知权限，以防止在您离开应用时停止游戏或模组包的下载。没有这个权限，Android 可能会在您将 MojavLauncher 置于后台模式时关闭您的下载。</string>
     <string name="notification_permission_toast">您可以随时进入设置来更改您的意愿</string>
     <string name="preference_ask_for_notification_title">允许通知</string>
     <string name="preference_ask_for_notification_description">请点击重新请求通知权限，以确保游戏或整合包的后台下载正常工作。</string>
@@ -378,4 +378,42 @@
     <string name="preference_device_info_summary">SoC：%1$s\nGPU：%2$s\nOpenGL ES：%3$d\nCPU 核心数：%4$d\n内存：%5$d MB</string>
     <string name="preference_language_title">语言</string>
     <string name="language_system_default">跟随系统</string>
+    <string name="main_transfer_title">迁移</string>
+    <string name="main_help_title">帮助</string>
+    <string name="preference_migration_title">迁移数据</string>
+    <string name="preference_migration_description">从 Mojo 或 Pojav 导入存档、模组和设置</string>
+    <string name="migration_info_summary">请选择旧启动器的游戏文件夹：Pojav 通常是 games/PojavLauncher/.minecraft，Mojo 则是档案文件夹。已存在的文件不会被覆盖。</string>
+    <string name="preference_category_migration_what">要迁移的内容</string>
+    <string name="migration_opt_worlds">存档（saves）</string>
+    <string name="migration_opt_worlds_summary">默认关闭，可能占用大量空间</string>
+    <string name="migration_opt_mods">模组</string>
+    <string name="migration_opt_resourcepacks">资源包</string>
+    <string name="migration_opt_shaders">光影包</string>
+    <string name="migration_opt_screenshots">截图</string>
+    <string name="migration_opt_settings">游戏设置和服务器</string>
+    <string name="migration_opt_versions">已安装的版本</string>
+    <string name="migration_start_title">选择文件夹并迁移</string>
+    <string name="migration_start_summary">选择旧启动器的游戏文件夹</string>
+    <string name="migration_full_title">从另一个 Mojo 完整复制</string>
+    <string name="migration_full_summary">所有数据，包括账号和档案（仅限 Mojo）</string>
+    <string name="migration_confirm_title">开始迁移？</string>
+    <string name="migration_confirm_message">所选内容将复制到当前档案。已存在的文件不会被覆盖。</string>
+    <string name="migration_not_found">这看起来不是游戏文件夹。请选择包含 saves、mods 或 versions 的文件夹。</string>
+    <string name="migration_nothing_selected">请至少选择一项要迁移的内容</string>
+    <string name="migration_done">迁移完成：已复制 %1$d 个，已跳过 %2$d 个</string>
+    <string name="migration_no_space">可用空间不足，无法迁移</string>
+    <string name="preference_restore_optimal_title">恢复最佳设置</string>
+    <string name="preference_restore_optimal_summary">将图形和性能选项重置为为此设备选定的值</string>
+    <string name="restore_optimal_confirm_message">图形和性能选项将重置为为您的设备选定的值。继续吗？</string>
+    <string name="restore_optimal_done">已恢复最佳设置</string>
+    <string name="help_title">帮助和工具</string>
+    <string name="help_description">指南、链接、日志和 .jar 安装器</string>
+    <string name="help_guide_title">如何使用启动器</string>
+    <string name="help_offer_title">欢迎！</string>
+    <string name="help_offer_message">想快速了解一下启动器吗？你可以随时打开：设置 → 帮助和工具。</string>
+    <string name="help_offer_yes">好的</string>
+    <string name="help_offer_no">以后再说</string>
+    <string name="help_guide_summary">主要功能快速导览</string>
+    <string name="preference_category_migration_full">完整复制</string>
+    <string name="help_guide_text">1. 在底部选择档案或版本，然后点击启动游戏。\n2. 点击顶部的名称以登录或切换账号。\n3. 帧率太低？打开 设置 → 视频和渲染器，点击恢复最佳设置。\n4. 自定义控制布局可以移动并调整屏幕按钮的大小。\n5. 迁移可从 Mojo 或 Pojav 导入存档、模组和设置。\n6. 设置 → 个性化可更改语言、强调色和图标。\n7. 打开游戏目录会显示该档案的存档、模组和资源包。\n8. 如果游戏崩溃，请分享日志：设置 → 帮助和工具。</string>
 </resources>

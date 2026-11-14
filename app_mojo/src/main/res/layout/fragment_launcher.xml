@@ -29,8 +29,8 @@
 				style="@style/LauncherMenuButton.Universal"
 				android:layout_margin="@dimen/padding_moderate"
 				android:layout_width="0dp"
-				android:text="@string/mcl_tab_wiki"
-				android:drawableStart="@drawable/ic_px_book"
+				android:text="@string/main_transfer_title"
+				android:drawableStart="@drawable/ic_px_data_import"
 				app:layout_constraintTop_toTopOf="parent"
 				app:layout_constraintStart_toStartOf="parent"
 				app:layout_constraintEnd_toStartOf="@id/social_divider" />
@@ -48,8 +48,8 @@
 				style="@style/LauncherMenuButton.Universal"
 				android:layout_margin="@dimen/padding_moderate"
 				android:layout_width="0dp"
-				android:text="@string/mcl_button_social_media"
-				android:drawableStart="@drawable/ic_social_media"
+				android:text="@string/main_help_title"
+				android:drawableStart="@drawable/ic_px_book"
 				app:layout_constraintTop_toTopOf="parent"
 				app:layout_constraintStart_toEndOf="@id/social_divider"
 				app:layout_constraintEnd_toEndOf="parent"/>
@@ -66,6 +66,7 @@
 
 			<com.kdt.mcgui.LauncherMenuButton
 				android:id="@+id/install_jar_button"
+                android:visibility="gone"
 				style="@style/LauncherMenuButton.Universal"
 				android:layout_margin="@dimen/padding_moderate"
 				android:layout_width="match_parent"
@@ -75,6 +76,7 @@
 
 			<com.kdt.mcgui.LauncherMenuButton
 				android:id="@+id/share_logs_button"
+                android:visibility="gone"
 				style="@style/LauncherMenuButton.Universal"
 				android:layout_margin="@dimen/padding_moderate"
 				android:layout_width="match_parent"

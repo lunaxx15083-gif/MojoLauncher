@@ -69,6 +69,7 @@
             />
         <SwitchPreferenceCompat
             android:key="buttonAllCaps"
+            app2:isPreferenceVisible="false"
             android:defaultValue="true"
             android:title="@string/mcl_setting_title_buttonallcaps"
             android:summary="@string/mcl_setting_subtitle_buttonallcaps"
@@ -105,6 +106,7 @@
             app2:showSeekBarValue="true" />
         <SwitchPreferenceCompat
             android:key="mouse_start"
+            app2:isPreferenceVisible="false"
             android:title="@string/preference_mouse_start_title"
             android:summary="@string/preference_mouse_start_description"
             android:icon="@drawable/ic_px_virtual_mouse"/>
@@ -178,6 +180,7 @@
     <PreferenceCategory android:title="@string/preference_category_keyboard">
         <SwitchPreferenceCompat
             android:key="keyboardAutoPanning"
+            app2:isPreferenceVisible="false"
             android:title="@string/preference_keyboard_autopan_title"
             android:summary="@string/preference_keyboard_autopan_summary"
             />

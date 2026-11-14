@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
     <!-- App name part -->
-    <string name="app_short_name">MJLauncher</string>
+    <string name="app_short_name">MojavLauncher</string>
     <!-- Action bar part -->
     <!-- Languages list part -->
     <!-- Login strings -->
@@ -14,7 +14,7 @@
     <!-- AlertDialog title -->
     <string name="alerttitle_installmod">Вибрати інсталятор моду</string>
     <!-- Error messages -->
-    <string name="error_fatal">MJLauncher був зупинений у результаті збою</string>
+    <string name="error_fatal">MojavLauncher був зупинений у результаті збою</string>
     <string name="error_no_version">Версію не знайдено!</string>
     <string name="error_show_more">Розгорнути</string>
     <string name="error_show_less">Згорнути</string>
@@ -230,7 +230,7 @@
     <string name="preference_gyro_sample_rate_title">Частота оновлення гіроскопа</string>
     <string name="preference_gyro_sample_rate_description">Якщо у вас виникають проблеми з гіроскопом, збільште цей параметр.</string>
     <string name="microsoft_login_retry_later">Занадто багато запитів, спробуйте пізніше.</string>
-    <string name="storage_required">MJLauncher потрібен дозвіл для доступу в сховище, дайте цей доступ та перезапустіть лаунчер</string>
+    <string name="storage_required">MojavLauncher потрібен дозвіл для доступу в сховище, дайте цей доступ та перезапустіть лаунчер</string>
     <string name="mcl_setting_title_buttonallcaps">Використовувати лише великі літери в назвах кнопок</string>
     <string name="mcl_setting_subtitle_buttonallcaps">Вимкніть, якщо бажаєте використовувати малі літери в елементах керування.</string>
     <string name="create_instance">Створити нову версію</string>
@@ -321,7 +321,7 @@
     <string name="preference_category_miscellaneous">Інші параметри</string>
     <string name="preference_category_video">Налаштування відео</string>
     <string name="notification_permission_dialog_title">Запит на дозвіл</string>
-    <string name="notification_permission_dialog_text">MJLauncher попросить дозвіл на сповіщення, це потрібно щоб Android не закривав лаунчер у фоновому режимі, щоб не перервати завантаження.</string>
+    <string name="notification_permission_dialog_text">MojavLauncher попросить дозвіл на сповіщення, це потрібно щоб Android не закривав лаунчер у фоновому режимі, щоб не перервати завантаження.</string>
     <string name="notification_permission_toast">Ви завжди зможете змінити це в налаштуваннях</string>
     <string name="preference_ask_for_notification_title">Дозволити сповіщення</string>
     <string name="preference_ask_for_notification_description">Натисніть, щоб повторно запитати дозвіл на сповіщення, необхідний для коректної роботи фонових завантажень гри/модпаку.</string>
@@ -435,4 +435,42 @@
     <string name="preference_device_info_summary">Процесор: %1$s\nGPU: %2$s\nOpenGL ES: %3$d\nЯдра CPU: %4$d\nОЗП: %5$d МБ</string>
     <string name="preference_language_title">Мова</string>
     <string name="language_system_default">Як у системі</string>
+    <string name="main_transfer_title">Перенесення</string>
+    <string name="main_help_title">Допомога</string>
+    <string name="preference_migration_title">Перенесення даних</string>
+    <string name="preference_migration_description">Імпорт світів, модів і налаштувань з Mojo або Pojav</string>
+    <string name="migration_info_summary">Виберіть папку гри старого лаунчера: у Pojav це зазвичай games/PojavLauncher/.minecraft, у Mojo папка профілю. Наявні файли не перезаписуються.</string>
+    <string name="preference_category_migration_what">Що переносити</string>
+    <string name="migration_opt_worlds">Світи (saves)</string>
+    <string name="migration_opt_worlds_summary">Типово вимкнено, може зайняти багато місця</string>
+    <string name="migration_opt_mods">Моди</string>
+    <string name="migration_opt_resourcepacks">Ресурспаки</string>
+    <string name="migration_opt_shaders">Шейдери</string>
+    <string name="migration_opt_screenshots">Скриншоти</string>
+    <string name="migration_opt_settings">Налаштування гри та сервери</string>
+    <string name="migration_opt_versions">Установлені версії</string>
+    <string name="migration_start_title">Вибрати папку й перенести</string>
+    <string name="migration_start_summary">Вкажіть папку гри старого лаунчера</string>
+    <string name="migration_full_title">Повна копія з іншого Mojo</string>
+    <string name="migration_full_summary">Усі дані, зокрема облікові записи та профілі (лише Mojo)</string>
+    <string name="migration_confirm_title">Почати перенесення?</string>
+    <string name="migration_confirm_message">Вибране буде скопійовано до поточного профілю. Наявні файли не перезаписуються.</string>
+    <string name="migration_not_found">Це не схоже на папку гри. Виберіть папку, у якій є saves, mods або versions.</string>
+    <string name="migration_nothing_selected">Виберіть хоча б один пункт для перенесення</string>
+    <string name="migration_done">Перенесення завершено: скопійовано %1$d, пропущено %2$d</string>
+    <string name="migration_no_space">Недостатньо вільного місця для перенесення</string>
+    <string name="preference_restore_optimal_title">Повернути оптимальні налаштування</string>
+    <string name="preference_restore_optimal_summary">Скинути параметри графіки та продуктивності до значень, підібраних для цього пристрою</string>
+    <string name="restore_optimal_confirm_message">Параметри графіки та продуктивності буде скинуто до значень, підібраних для вашого пристрою. Продовжити?</string>
+    <string name="restore_optimal_done">Оптимальні налаштування відновлено</string>
+    <string name="help_title">Допомога та інструменти</string>
+    <string name="help_description">Посібник, посилання, журнал і встановлювач .jar</string>
+    <string name="help_guide_title">Як користуватися лаунчером</string>
+    <string name="help_offer_title">Вітаємо!</string>
+    <string name="help_offer_message">Хочете короткий огляд лаунчера? Його можна відкрити будь-коли: Налаштування → Допомога та інструменти.</string>
+    <string name="help_offer_yes">Показати</string>
+    <string name="help_offer_no">Не зараз</string>
+    <string name="help_guide_summary">Короткий огляд основних функцій</string>
+    <string name="preference_category_migration_full">Повна копія</string>
+    <string name="help_guide_text">1. Виберіть профіль або версію внизу й натисніть Грати.\n2. Торкніться свого імені вгорі, щоб увійти або змінити обліковий запис.\n3. Мало FPS? Відкрийте Налаштування → Відео та візуалізатор і натисніть Повернути оптимальні налаштування.\n4. Кастомне керування дозволяє переміщати та змінювати розмір екранних кнопок.\n5. Перенесення переносить світи, моди та налаштування з Mojo або Pojav.\n6. Налаштування → Кастомізація змінюють мову, колір акценту та іконки.\n7. Відкрити папку гри показує світи, моди та ресурспаки профілю.\n8. Якщо гра вилітає, надішліть журнал: Налаштування → Допомога та інструменти.</string>
 </resources>
