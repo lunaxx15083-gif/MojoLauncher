@@ -1,21 +1,21 @@
-<H1 align="center">MojoLauncher (также известный как MJLauncher)</H1>
+<H1 align="center">MojavLauncher (также известный как MJLauncher)</H1>
 
 <a href="./README.md">Readme in English</a>
 
-<img src="./app_mojo/src/main/assets/mojo.png" align="left" width="150" height="150" alt="MojoLauncher logo">
+<img src="./app_mojo/src/main/assets/mojav.png" align="left" width="150" height="150" alt="MojavLauncher logo">
 
 [![Android CI](https://github.com/MojoLauncher/MojoLauncher/workflows/Android%20CI/badge.svg)](https://github.com/MojoLauncher/MojoLauncher/actions)
 [![GitHub commit activity](https://img.shields.io/github/commit-activity/m/MojoLauncher/MojoLauncher)](https://github.com/MojoLauncher/MojoLauncher/actions)
 [![Discord](https://img.shields.io/discord/1365346109131722753.svg?label=&logo=discord&logoColor=ffffff&color=7389D8&labelColor=6A7EC2)](https://discord.gg/VHdwQFsaGX)
 [![Telegram](https://img.shields.io/badge/Telegram-MojoLauncher%20%D0%A1%D0%9D%D0%93-26A5E4?logo=telegram&logoColor=white)](https://t.me/mojolauncher_chat)
 
-* MojoLauncher это лаунчер, основанный на [PojavLauncher](https://github.com/PojavLauncherTeam/PojavLauncher), позволяющий играть в Minecraft: Java Edition на устройствах Android!
+* MojavLauncher это лаунчер, основанный на [PojavLauncher](https://github.com/PojavLauncherTeam/PojavLauncher), позволяющий играть в Minecraft: Java Edition на устройствах Android!
 
 * Он может запускать почти любую версию Minecraft, позволяя устанваливать через .jar загрузчики модов такие как [Forge](https://files.minecraftforge.net/) и [Fabric](http://fabricmc.net/), и моды по типу [OptiFine](https://optifine.net).
 
 ## Навигация
 - [Введение](#introduction)
-- [Как получить MojoLauncher](#getting-mojolauncher)
+- [Как получить MojavLauncher](#getting-mojolauncher)
 - [Сборка](#building) 
 - [Текущие планы](#current-roadmap) 
 - [Лицензия](#license) 
@@ -23,13 +23,13 @@
 - [Благодарности & Сторонние компоненты и их лицензии](#credits--third-party-components-and-their-licenses-if-available)
 
 ## Введение 
-* MojoLauncher это лаунчер Minecraft: Java Edition для Android основанный на [PojavLauncher](https://github.com/PojavLauncherTeam/PojavLauncher)
+* MojavLauncher это лаунчер Minecraft: Java Edition для Android основанный на [PojavLauncher](https://github.com/PojavLauncherTeam/PojavLauncher)
 * Лаунчер может запускать почти все доступные версии Minecraft в диапазоне от rd-132211 до снапшотов 26.x (включая версии Combat Test). 
 * Моддинг через Forge и Fabric так же поддерживается. 
 
-## Как получить MojoLauncher
+## Как получить MojavLauncher
 
-Получить копию MojoLauncher можно четырьмя способами:
+Получить копию MojavLauncher можно четырьмя способами:
 
 1. Можно скачать готовый билд с раздела [релизов](http://github.com/mojolauncher/mojolauncher/releases).
 
@@ -66,7 +66,7 @@
 - Скорее всего есть ещё, поэтому у нас есть баг-трекер ;) 
 
 ## Лицензия
-- MojoLauncher лицензирован под [GNU LGPLv3](https://github.com/MojoLauncher/MojoLauncher/blob/v3_openjdk/LICENSE).
+- MojavLauncher лицензирован под [GNU LGPLv3](https://github.com/MojoLauncher/MojoLauncher/blob/v3_openjdk/LICENSE).
 
 ## Внести свой вклад в проект
 Мы привествуем желающих внести свой вклад в проект! Нам не помешает любая помощь, не только код. Например, вы можете помочь в разработке и формировании вики. Вы так же можете помочь [перевести проект](https://mojolauncher.ru/translate/translator.html) на ваш язык!
