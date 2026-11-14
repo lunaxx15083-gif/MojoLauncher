@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="accent_color_names">
+        <item>Xanh lá</item>
+        <item>Xanh dương</item>
+        <item>Đỏ</item>
+        <item>Tím</item>
+        <item>Cam</item>
+        <item>Hồng</item>
+        <item>Xanh ngọc</item>
+    </string-array>
+    <string-array name="icon_style_names">
+        <item>Trắng (mặc định)</item>
+        <item>Màu nhấn</item>
+        <item>Xám</item>
+    </string-array>
+</resources>

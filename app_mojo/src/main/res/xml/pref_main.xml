@@ -47,6 +47,14 @@
 
 
         <Preference
+            android:key="customization_screen_setting"
+            android:title="@string/preference_customization_title"
+            android:summary="@string/preference_customization_description"
+            android:fragment="git.artdeell.mojo.prefs.screens.LauncherPreferenceCustomizationFragment"
+            android:icon="@drawable/ic_px_dynamic"
+            />
+
+        <Preference
             android:key="experimental_screen_setting"
             android:title="@string/preference_experimental_title"
             android:summary="@string/preference_experimental_description"

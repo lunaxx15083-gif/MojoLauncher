@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="accent_color_values" translatable="false">
+        <item>green</item>
+        <item>blue</item>
+        <item>red</item>
+        <item>purple</item>
+        <item>orange</item>
+        <item>pink</item>
+        <item>teal</item>
+    </string-array>
+    <string-array name="icon_style_values" translatable="false">
+        <item>white</item>
+        <item>accent</item>
+        <item>gray</item>
+    </string-array>
+</resources>

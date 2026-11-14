@@ -568,4 +568,11 @@
     <string name="warn_auth_type_missing">%s is not available, using local account</string>
     <string name="preference_device_info_title">Device</string>
     <string name="preference_device_info_summary">SoC: %1$s\nGPU: %2$s\nOpenGL ES: %3$d\nCPU cores: %4$d\nRAM: %5$d MB</string>
+    <string name="preference_customization_title">Customization</string>
+    <string name="preference_customization_description">Accent color and icon style</string>
+    <string name="preference_category_customization">Appearance</string>
+    <string name="preference_accent_color_title">Accent color</string>
+    <string name="preference_icon_style_title">Icon style</string>
+    <string name="preference_language_title">Language</string>
+    <string name="language_system_default">System default</string>
 </resources>

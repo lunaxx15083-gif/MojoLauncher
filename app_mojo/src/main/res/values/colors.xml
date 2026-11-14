@@ -23,4 +23,14 @@
     <color name="primary_text">#FFFFFF</color>
     <color name="secondary_text">#9AA4AD</color>
 
+
+    <!-- Accent presets for the Customization screen -->
+    <color name="accent_green">#2E8B4F</color>
+    <color name="accent_blue">#2F6FD1</color>
+    <color name="accent_red">#C73E3E</color>
+    <color name="accent_purple">#8A48C9</color>
+    <color name="accent_orange">#C8621A</color>
+    <color name="accent_pink">#CC3F7A</color>
+    <color name="accent_teal">#1E8A8A</color>
+    <color name="icon_gray">#9AA4AD</color>
 </resources>

@@ -322,4 +322,14 @@
     <string name="controller_button_start">Başlat</string>
     <string name="controller_button_select">Seç</string>
     <string name="customctrl_visibility_title">Görünüş</string>
+    <string name="preference_customization_title">Fərdiləşdirmə</string>
+    <string name="preference_customization_description">Vurğu rəngi və ikon üslubu</string>
+    <string name="preference_category_customization">Görünüş</string>
+    <string name="preference_accent_color_title">Vurğu rəngi</string>
+    <string name="preference_icon_style_title">İkon üslubu</string>
+    <string name="preference_device_info_title">Cihaz</string>
+    <string name="preference_device_info_summary">Prosessor: %1$s\nGPU: %2$s\nOpenGL ES: %3$d\nCPU nüvələri: %4$d\nRAM: %5$d MB</string>
+    <string name="preference_language_title">Dil</string>
+    <string name="language_system_default">Sistem standartı</string>
+    <string name="mcl_button_open_directory">Oyun qovluğunu aç</string>
 </resources>

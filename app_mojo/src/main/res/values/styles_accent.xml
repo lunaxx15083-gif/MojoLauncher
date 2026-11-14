@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Applied on top of the activity theme by BaseActivity, see AccentColor -->
+    <style name="AccentOverlay_Green"><item name="colorAccent">@color/accent_green</item></style>
+    <style name="AccentOverlay_Blue"><item name="colorAccent">@color/accent_blue</item></style>
+    <style name="AccentOverlay_Red"><item name="colorAccent">@color/accent_red</item></style>
+    <style name="AccentOverlay_Purple"><item name="colorAccent">@color/accent_purple</item></style>
+    <style name="AccentOverlay_Orange"><item name="colorAccent">@color/accent_orange</item></style>
+    <style name="AccentOverlay_Pink"><item name="colorAccent">@color/accent_pink</item></style>
+    <style name="AccentOverlay_Teal"><item name="colorAccent">@color/accent_teal</item></style>
+</resources>

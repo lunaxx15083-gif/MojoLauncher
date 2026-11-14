@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="accent_color_names">
+        <item>Verde</item>
+        <item>Azul</item>
+        <item>Rojo</item>
+        <item>Morado</item>
+        <item>Naranja</item>
+        <item>Rosa</item>
+        <item>Turquesa</item>
+    </string-array>
+    <string-array name="icon_style_names">
+        <item>Blancos (predeterminado)</item>
+        <item>Color de acento</item>
+        <item>Grises</item>
+    </string-array>
+</resources>

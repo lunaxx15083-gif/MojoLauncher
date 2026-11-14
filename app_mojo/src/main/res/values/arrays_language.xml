@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Native names are intentionally not translated -->
+    <string-array name="language_names" translatable="false">
+        <item>@string/language_system_default</item>
+        <item>English (US)</item>
+        <item>Español (EE. UU.)</item>
+        <item>Русский</item>
+        <item>Українська</item>
+        <item>Қазақша</item>
+        <item>Azərbaycanca</item>
+        <item>中文（简体）</item>
+        <item>Tiếng Việt</item>
+        <item>한국어</item>
+        <item>Français</item>
+    </string-array>
+    <string-array name="language_values" translatable="false">
+        <item>system</item>
+        <item>en-US</item>
+        <item>es-US</item>
+        <item>ru</item>
+        <item>uk</item>
+        <item>kk</item>
+        <item>az-AZ</item>
+        <item>zh-CN</item>
+        <item>vi</item>
+        <item>ko</item>
+        <item>fr</item>
+    </string-array>
+</resources>

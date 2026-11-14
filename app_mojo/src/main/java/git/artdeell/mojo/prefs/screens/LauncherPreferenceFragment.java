@@ -15,6 +15,7 @@ import androidx.preference.PreferenceFragmentCompat;
 import git.artdeell.mojo.LauncherActivity;
 import git.artdeell.mojo.R;
 import git.artdeell.mojo.prefs.LauncherPreferences;
+import git.artdeell.mojo.utils.AccentColor;
 
 /**
  * Preference for the main screen, any sub-screen should inherit this class for consistent behavior,
@@ -27,6 +28,7 @@ public class LauncherPreferenceFragment extends PreferenceFragmentCompat impleme
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         view.setBackgroundColor(getResources().getColor(R.color.background_app));
         super.onViewCreated(view, savedInstanceState);
+        AccentColor.tintPreferenceIcons(requireContext(), getPreferenceScreen());
     }
 
     @Override

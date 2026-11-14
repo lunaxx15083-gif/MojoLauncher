@@ -352,4 +352,13 @@
     <string name="local_login_bad_username_title">Nombre de usuario inadecuado</string>
     <string name="local_login_bad_username_text">El nombre de usuario debe de ser entre 3 a 16 caracteres, y solo contener letras latinas, números de 0 a 9 y guiones bajos.</string>
     <string name="quick_setting_title">Configuraciones rápidas</string>
+    <string name="preference_customization_title">Personalización</string>
+    <string name="preference_customization_description">Color de acento y estilo de iconos</string>
+    <string name="preference_category_customization">Apariencia</string>
+    <string name="preference_accent_color_title">Color de acento</string>
+    <string name="preference_icon_style_title">Estilo de iconos</string>
+    <string name="preference_device_info_title">Dispositivo</string>
+    <string name="preference_device_info_summary">SoC: %1$s\nGPU: %2$s\nOpenGL ES: %3$d\nNúcleos de CPU: %4$d\nRAM: %5$d MB</string>
+    <string name="preference_language_title">Idioma</string>
+    <string name="language_system_default">Predeterminado del sistema</string>
 </resources>

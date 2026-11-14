@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="accent_color_names">
+        <item>Yaşıl</item>
+        <item>Mavi</item>
+        <item>Qırmızı</item>
+        <item>Bənövşəyi</item>
+        <item>Narıncı</item>
+        <item>Çəhrayı</item>
+        <item>Firuzəyi</item>
+    </string-array>
+    <string-array name="icon_style_names">
+        <item>Ağ (standart)</item>
+        <item>Vurğu rəngi</item>
+        <item>Boz</item>
+    </string-array>
+</resources>

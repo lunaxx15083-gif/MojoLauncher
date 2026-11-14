@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="accent_color_names">
+        <item>초록</item>
+        <item>파랑</item>
+        <item>빨강</item>
+        <item>보라</item>
+        <item>주황</item>
+        <item>분홍</item>
+        <item>청록</item>
+    </string-array>
+    <string-array name="icon_style_names">
+        <item>흰색(기본)</item>
+        <item>강조 색상</item>
+        <item>회색</item>
+    </string-array>
+</resources>

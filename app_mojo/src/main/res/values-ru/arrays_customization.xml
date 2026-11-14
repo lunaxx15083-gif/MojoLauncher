@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="accent_color_names">
+        <item>Зелёный</item>
+        <item>Синий</item>
+        <item>Красный</item>
+        <item>Фиолетовый</item>
+        <item>Оранжевый</item>
+        <item>Розовый</item>
+        <item>Бирюзовый</item>
+    </string-array>
+    <string-array name="icon_style_names">
+        <item>Белые (по умолчанию)</item>
+        <item>Цвет акцента</item>
+        <item>Серые</item>
+    </string-array>
+</resources>

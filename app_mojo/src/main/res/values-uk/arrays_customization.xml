@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="accent_color_names">
+        <item>Зелений</item>
+        <item>Синій</item>
+        <item>Червоний</item>
+        <item>Фіолетовий</item>
+        <item>Помаранчевий</item>
+        <item>Рожевий</item>
+        <item>Бірюзовий</item>
+    </string-array>
+    <string-array name="icon_style_names">
+        <item>Білі (за замовчуванням)</item>
+        <item>Колір акценту</item>
+        <item>Сірі</item>
+    </string-array>
+</resources>

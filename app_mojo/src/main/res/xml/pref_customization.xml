@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app2="http://schemas.android.com/apk/res-auto">
+
+    <git.artdeell.mojo.prefs.BackButtonPreference />
+
+    <PreferenceCategory android:title="@string/preference_category_customization" >
+        <androidx.preference.ListPreference
+            android:defaultValue="system"
+            android:icon="@drawable/ic_px_translate"
+            android:key="appLanguage"
+            android:entries="@array/language_names"
+            android:entryValues="@array/language_values"
+            android:title="@string/preference_language_title"
+            app2:useSimpleSummaryProvider="true"/>
+        <androidx.preference.ListPreference
+            android:defaultValue="green"
+            android:icon="@drawable/ic_px_image"
+            android:key="accentColor"
+            android:entries="@array/accent_color_names"
+            android:entryValues="@array/accent_color_values"
+            android:title="@string/preference_accent_color_title"
+            app2:useSimpleSummaryProvider="true"/>
+        <androidx.preference.ListPreference
+            android:defaultValue="white"
+            android:icon="@drawable/ic_px_dynamic"
+            android:key="iconStyle"
+            android:entries="@array/icon_style_names"
+            android:entryValues="@array/icon_style_values"
+            android:title="@string/preference_icon_style_title"
+            app2:useSimpleSummaryProvider="true"/>
+    </PreferenceCategory>
+</PreferenceScreen>

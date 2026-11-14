@@ -429,4 +429,13 @@
     <string name="auth_select_elyby">Tài khoản Ely.by </string>
     <string name="auth_select_local">Tài khoản nội bộ</string>
     <string name="instance_dir_missing">Thư mục instance bị thiếu</string>
+    <string name="preference_customization_title">Tùy biến</string>
+    <string name="preference_customization_description">Màu nhấn và kiểu biểu tượng</string>
+    <string name="preference_category_customization">Giao diện</string>
+    <string name="preference_accent_color_title">Màu nhấn</string>
+    <string name="preference_icon_style_title">Kiểu biểu tượng</string>
+    <string name="preference_device_info_title">Thiết bị</string>
+    <string name="preference_device_info_summary">SoC: %1$s\nGPU: %2$s\nOpenGL ES: %3$d\nSố nhân CPU: %4$d\nRAM: %5$d MB</string>
+    <string name="preference_language_title">Ngôn ngữ</string>
+    <string name="language_system_default">Mặc định hệ thống</string>
 </resources>

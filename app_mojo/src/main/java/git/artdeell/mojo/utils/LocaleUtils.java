@@ -13,6 +13,7 @@ import androidx.preference.*;
 import java.util.*;
 
 public class LocaleUtils extends ContextWrapper {
+    public static final String PREF_APP_LANGUAGE = "appLanguage";
 
     public LocaleUtils(Context base) {
         super(base);
@@ -27,14 +28,23 @@ public class LocaleUtils extends ContextWrapper {
             PREF_FORCE_ENGLISH = DEFAULT_PREF.getBoolean("force_english", false);
         }
 
-        if(PREF_FORCE_ENGLISH){
+        // Language chosen in Settings > Customization wins; "Force English" is used when it is left on "system"
+        Locale targetLocale = null;
+        String language = DEFAULT_PREF.getString(PREF_APP_LANGUAGE, "system");
+        if(language != null && !"system".equals(language)){
+            targetLocale = Locale.forLanguageTag(language);
+        }else if(PREF_FORCE_ENGLISH){
+            targetLocale = Locale.ENGLISH;
+        }
+
+        if(targetLocale != null){
             Resources resources = context.getResources();
             Configuration configuration = resources.getConfiguration();
 
-            configuration.setLocale(Locale.ENGLISH);
-            Locale.setDefault(Locale.ENGLISH);
+            configuration.setLocale(targetLocale);
+            Locale.setDefault(targetLocale);
             if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.N){
-                LocaleList localeList = new LocaleList(Locale.ENGLISH);
+                LocaleList localeList = new LocaleList(targetLocale);
                 LocaleList.setDefault(localeList);
                 configuration.setLocales(localeList);
             }

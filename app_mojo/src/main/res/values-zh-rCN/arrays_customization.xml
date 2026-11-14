@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="accent_color_names">
+        <item>绿色</item>
+        <item>蓝色</item>
+        <item>红色</item>
+        <item>紫色</item>
+        <item>橙色</item>
+        <item>粉色</item>
+        <item>青色</item>
+    </string-array>
+    <string-array name="icon_style_names">
+        <item>白色（默认）</item>
+        <item>强调色</item>
+        <item>灰色</item>
+    </string-array>
+</resources>

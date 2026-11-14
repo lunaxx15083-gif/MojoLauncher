@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="accent_color_names">
+        <item>Жасыл</item>
+        <item>Көк</item>
+        <item>Қызыл</item>
+        <item>Күлгін</item>
+        <item>Қызғылт сары</item>
+        <item>Қызғылт</item>
+        <item>Көгілдір</item>
+    </string-array>
+    <string-array name="icon_style_names">
+        <item>Ақ (әдепкі)</item>
+        <item>Акцент түсі</item>
+        <item>Сұр</item>
+    </string-array>
+</resources>

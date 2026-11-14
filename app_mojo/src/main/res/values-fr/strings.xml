@@ -360,4 +360,14 @@
     <string name="customctrl_visibility_ingame">En jeu</string>
     <string name="customctrl_visibility_in_menus">Dans les menus</string>
     <string name="controller_remapper_expand_entry">Développer pour changer les codes de touches</string>
+    <string name="preference_customization_title">Personnalisation</string>
+    <string name="preference_customization_description">Couleur d\'accent et style des icônes</string>
+    <string name="preference_category_customization">Apparence</string>
+    <string name="preference_accent_color_title">Couleur d\'accent</string>
+    <string name="preference_icon_style_title">Style des icônes</string>
+    <string name="preference_device_info_title">Appareil</string>
+    <string name="preference_device_info_summary">SoC : %1$s\nGPU : %2$s\nOpenGL ES : %3$d\nCœurs CPU : %4$d\nRAM : %5$d Mo</string>
+    <string name="preference_language_title">Langue</string>
+    <string name="language_system_default">Par défaut du système</string>
+    <string name="mcl_button_open_directory">Ouvrir le dossier du jeu</string>
 </resources>

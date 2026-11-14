@@ -21,6 +21,7 @@ public abstract class BaseActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        getTheme().applyStyle(AccentColor.overlayStyle(this), true);
         super.onCreate(savedInstanceState);
         LocaleUtils.setLocale(this);
         Tools.setInsetsMode(this, setFullscreen(), shouldIgnoreNotch());

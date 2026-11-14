@@ -426,4 +426,13 @@
     <string name="modloader_dl_install_legacy_fabric_instance">"Створити версію Legacy Fabric"</string>
     <string name="instance_delete">Видалити версію</string>
     <string name="instance_delete_confirmation">Ви впенені що хочете видалити цю версію? Це НАЗАВЖДИ видалить всі світи, моди, ресурси та інші данні в папці версії. Ця дія НЕ може відмінена в майбутньому</string>
+    <string name="preference_customization_title">Кастомізація</string>
+    <string name="preference_customization_description">Колір акценту та стиль іконок</string>
+    <string name="preference_category_customization">Зовнішній вигляд</string>
+    <string name="preference_accent_color_title">Колір акценту</string>
+    <string name="preference_icon_style_title">Стиль іконок</string>
+    <string name="preference_device_info_title">Пристрій</string>
+    <string name="preference_device_info_summary">Процесор: %1$s\nGPU: %2$s\nOpenGL ES: %3$d\nЯдра CPU: %4$d\nОЗП: %5$d МБ</string>
+    <string name="preference_language_title">Мова</string>
+    <string name="language_system_default">Як у системі</string>
 </resources>

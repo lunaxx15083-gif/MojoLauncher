@@ -1,8 +1,10 @@
 package com.kdt.mcgui;
 
 import android.content.Context;
+import android.content.res.ColorStateList;
 import android.content.res.Resources;
 import android.content.res.TypedArray;
+import android.graphics.PorterDuff;
 import android.util.AttributeSet;
 import android.util.TypedValue;
 import android.view.Gravity;
@@ -12,9 +14,11 @@ import android.widget.LinearLayout;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.core.content.res.ResourcesCompat;
+import androidx.core.widget.TextViewCompat;
 
 
 import git.artdeell.mojo.R;
+import git.artdeell.mojo.utils.AccentColor;
 
 import fr.spse.extended_view.ExtendedButton;
 
@@ -46,5 +50,10 @@ public class LauncherMenuButton extends ExtendedButton {
         sizes[0] = resources.getDimensionPixelSize(R.dimen._30sdp);
         getExtendedViewData().setSizeCompounds(sizes);
         postProcessDrawables();
+
+        if (AccentColor.hasIconTint(getContext())) {
+            TextViewCompat.setCompoundDrawableTintList(this, ColorStateList.valueOf(AccentColor.iconTintColor(getContext())));
+            TextViewCompat.setCompoundDrawableTintMode(this, PorterDuff.Mode.SRC_IN);
+        }
     }
 }

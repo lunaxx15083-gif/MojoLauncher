@@ -501,4 +501,11 @@
     <string name="clean_partfiles_wait">Очистка кеша скачиваний…</string>
     <string name="preference_device_info_title">Устройство</string>
     <string name="preference_device_info_summary">Процессор: %1$s\nGPU: %2$s\nOpenGL ES: %3$d\nЯдер CPU: %4$d\nОЗУ: %5$d МБ</string>
+    <string name="preference_customization_title">Кастомизация</string>
+    <string name="preference_customization_description">Цвет акцента и стиль иконок</string>
+    <string name="preference_category_customization">Внешний вид</string>
+    <string name="preference_accent_color_title">Цвет акцента</string>
+    <string name="preference_icon_style_title">Стиль иконок</string>
+    <string name="preference_language_title">Язык</string>
+    <string name="language_system_default">Как в системе</string>
 </resources>

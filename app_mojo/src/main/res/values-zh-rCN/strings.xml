@@ -369,4 +369,13 @@
     <string name="local_login_bad_username_title">用户名不合适</string>
     <string name="local_login_bad_username_text">用户名长度必须在 3–16 个字符之间，并且只能包含拉丁字母、数字 0–9 和下划线。</string>
     <string name="quick_setting_title">快速设置</string>
+    <string name="preference_customization_title">个性化</string>
+    <string name="preference_customization_description">强调色和图标样式</string>
+    <string name="preference_category_customization">外观</string>
+    <string name="preference_accent_color_title">强调色</string>
+    <string name="preference_icon_style_title">图标样式</string>
+    <string name="preference_device_info_title">设备</string>
+    <string name="preference_device_info_summary">SoC：%1$s\nGPU：%2$s\nOpenGL ES：%3$d\nCPU 核心数：%4$d\n内存：%5$d MB</string>
+    <string name="preference_language_title">语言</string>
+    <string name="language_system_default">跟随系统</string>
 </resources>

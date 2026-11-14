@@ -323,4 +323,14 @@
     <string name="controller_button_start">시작</string>
     <string name="controller_button_select">선택</string>
     <string name="customctrl_visibility_title">투명도</string>
+    <string name="preference_customization_title">사용자 지정</string>
+    <string name="preference_customization_description">강조 색상 및 아이콘 스타일</string>
+    <string name="preference_category_customization">외관</string>
+    <string name="preference_accent_color_title">강조 색상</string>
+    <string name="preference_icon_style_title">아이콘 스타일</string>
+    <string name="preference_device_info_title">기기</string>
+    <string name="preference_device_info_summary">SoC: %1$s\nGPU: %2$s\nOpenGL ES: %3$d\nCPU 코어: %4$d\nRAM: %5$d MB</string>
+    <string name="preference_language_title">언어</string>
+    <string name="language_system_default">시스템 기본값</string>
+    <string name="mcl_button_open_directory">게임 폴더 열기</string>
 </resources>
