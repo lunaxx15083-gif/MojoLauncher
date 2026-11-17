@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="preset_values" translatable="false">
+        <item>auto</item>
+        <item>performance</item>
+        <item>balanced</item>
+        <item>quality</item>
+        <item>battery</item>
+        <item>compat</item>
+    </string-array>
+</resources>

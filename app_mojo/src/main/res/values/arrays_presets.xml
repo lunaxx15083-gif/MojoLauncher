@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="preset_names">
+        <item>Auto: best for this device</item>
+        <item>Max FPS: lower resolution</item>
+        <item>Balanced</item>
+        <item>Quality: sharper picture</item>
+        <item>Battery saver: cool and quiet</item>
+        <item>Compatibility: safest settings</item>
+    </string-array>
+</resources>

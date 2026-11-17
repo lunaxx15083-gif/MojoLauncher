@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="preset_names">
+        <item>Авто: лучшее для устройства</item>
+        <item>Макс. FPS: ниже разрешение</item>
+        <item>Баланс</item>
+        <item>Качество: чётче картинка</item>
+        <item>Экономия батареи: прохладно и тихо</item>
+        <item>Совместимость: самые безопасные настройки</item>
+    </string-array>
+</resources>

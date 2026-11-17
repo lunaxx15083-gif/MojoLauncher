@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="preset_names">
+        <item>Tự động: tốt nhất cho thiết bị này</item>
+        <item>FPS tối đa: độ phân giải thấp hơn</item>
+        <item>Cân bằng</item>
+        <item>Chất lượng: hình ảnh sắc nét hơn</item>
+        <item>Tiết kiệm pin: mát và êm</item>
+        <item>Tương thích: cài đặt an toàn nhất</item>
+    </string-array>
+</resources>

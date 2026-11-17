@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="preset_names">
+        <item>自动：最适合此设备</item>
+        <item>最高帧率：较低分辨率</item>
+        <item>均衡</item>
+        <item>画质：更清晰的画面</item>
+        <item>省电：凉爽安静</item>
+        <item>兼容：最稳妥的设置</item>
+    </string-array>
+</resources>

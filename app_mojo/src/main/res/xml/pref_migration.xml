@@ -20,6 +20,12 @@
     </PreferenceCategory>
 
     <PreferenceCategory android:title="@string/preference_category_migration_what">
+        <Preference
+            android:key="migrationSelectAll"
+            android:title="@string/migration_select_all"/>
+        <Preference
+            android:key="migrationSelectNone"
+            android:title="@string/migration_select_none"/>
         <SwitchPreferenceCompat
             android:defaultValue="false"
             android:key="migrate_worlds"
@@ -43,8 +49,24 @@
             android:title="@string/migration_opt_screenshots"/>
         <SwitchPreferenceCompat
             android:defaultValue="true"
-            android:key="migrate_settings"
-            android:title="@string/migration_opt_settings"/>
+            android:key="migrate_options"
+            android:title="@string/migration_opt_options"/>
+        <SwitchPreferenceCompat
+            android:defaultValue="true"
+            android:key="migrate_servers"
+            android:title="@string/migration_opt_servers"/>
+        <SwitchPreferenceCompat
+            android:defaultValue="true"
+            android:key="migrate_config"
+            android:title="@string/migration_opt_config"/>
+        <SwitchPreferenceCompat
+            android:defaultValue="false"
+            android:key="migrate_maps"
+            android:title="@string/migration_opt_maps"/>
+        <SwitchPreferenceCompat
+            android:defaultValue="false"
+            android:key="migrate_logs"
+            android:title="@string/migration_opt_logs"/>
         <SwitchPreferenceCompat
             android:defaultValue="true"
             android:key="migrate_versions"

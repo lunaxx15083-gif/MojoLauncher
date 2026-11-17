@@ -6,6 +6,18 @@
 
     <PreferenceCategory android:title="@string/preference_category_video" >
         <Preference
+            android:key="selectDevice"
+            android:icon="@drawable/ic_px_dynamic"
+            android:title="@string/preference_select_device_title"
+            android:summary="@string/preference_select_device_summary"/>
+
+        <Preference
+            android:key="openPresets"
+            android:icon="@drawable/ic_px_zap"
+            android:title="@string/main_presets_title"
+            android:summary="@string/preference_presets_summary"/>
+
+        <Preference
             android:key="restoreOptimal"
             android:icon="@drawable/ic_px_zap"
             android:summary="@string/preference_restore_optimal_summary"
