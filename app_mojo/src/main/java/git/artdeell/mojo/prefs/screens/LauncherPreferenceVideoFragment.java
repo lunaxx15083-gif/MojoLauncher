@@ -22,7 +22,10 @@ import git.artdeell.mojo.game.renderer.RendererCache;
 import git.artdeell.mojo.game.renderer.extra.GLESProvider;
 import git.artdeell.mojo.prefs.CustomSeekBarPreference;
 import git.artdeell.mojo.prefs.LauncherPreferences;
+import git.artdeell.mojo.utils.DeviceDatabase;
+import git.artdeell.mojo.utils.DevicePicker;
 import git.artdeell.mojo.utils.DeviceProfile;
+import git.artdeell.mojo.utils.PresetPicker;
 import git.artdeell.mojo.utils.GpuUtils;
 import git.artdeell.mojo.vulkan.DriverInstaller;
 import git.artdeell.mojo.vulkan.DriverManager;
@@ -54,6 +57,19 @@ public class LauncherPreferenceVideoFragment extends LauncherPreferenceFragment 
     @Override
     public void onCreatePreferences(Bundle b, String str) {
         addPreferencesFromResource(R.xml.pref_video);
+        Preference selectDevice = requirePreference("selectDevice");
+        selectDevice.setSummary(DeviceDatabase.summary(requireContext()));
+        selectDevice.setOnPreferenceClickListener(preference -> {
+            DevicePicker.show(requireActivity(), () -> {
+                // Rebuild the screen so every switch and slider shows the new values
+                requireActivity().recreate();
+            });
+            return true;
+        });
+        requirePreference("openPresets").setOnPreferenceClickListener(preference -> {
+            PresetPicker.show(requireActivity());
+            return true;
+        });
         requirePreference("restoreOptimal").setOnPreferenceClickListener(preference -> {
             new AlertDialog.Builder(requireActivity())
                     .setTitle(R.string.preference_restore_optimal_title)

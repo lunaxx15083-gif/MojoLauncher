@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="preset_names">
+        <item>자동: 이 기기에 최적</item>
+        <item>최대 FPS: 낮은 해상도</item>
+        <item>균형</item>
+        <item>품질: 더 선명한 화면</item>
+        <item>절전: 시원하고 조용하게</item>
+        <item>호환성: 가장 안전한 설정</item>
+    </string-array>
+</resources>

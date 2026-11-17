@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="preset_names">
+        <item>Auto : le meilleur pour cet appareil</item>
+        <item>FPS maximum : résolution réduite</item>
+        <item>Équilibré</item>
+        <item>Qualité : image plus nette</item>
+        <item>Économie de batterie : frais et silencieux</item>
+        <item>Compatibilité : réglages les plus sûrs</item>
+    </string-array>
+</resources>

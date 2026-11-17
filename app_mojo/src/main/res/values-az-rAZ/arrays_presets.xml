@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="preset_names">
+        <item>Avto: bu cihaz üçün ən yaxşısı</item>
+        <item>Maks. FPS: aşağı ayırdetmə</item>
+        <item>Balanslı</item>
+        <item>Keyfiyyət: daha aydın görüntü</item>
+        <item>Batareya qənaəti: sərin və səssiz</item>
+        <item>Uyğunluq: ən təhlükəsiz parametrlər</item>
+    </string-array>
+</resources>

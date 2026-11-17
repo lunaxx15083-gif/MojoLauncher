@@ -40,6 +40,10 @@ public class FolderImporter {
     public static final int OPT_SCREENSHOTS = 1 << 4;
     public static final int OPT_SETTINGS = 1 << 5;
     public static final int OPT_VERSIONS = 1 << 6;
+    public static final int OPT_SERVERS = 1 << 7;
+    public static final int OPT_CONFIG = 1 << 8;
+    public static final int OPT_MAPS = 1 << 9;
+    public static final int OPT_LOGS = 1 << 10;
 
     private static final String TAG = "FolderImporter";
     private static final String[] PROJECTION = {
@@ -52,7 +56,13 @@ public class FolderImporter {
             "saves", "mods", "resourcepacks", "shaderpacks", "options.txt", "versions", "screenshots", "servers.dat"
     };
     private static final String[] SETTINGS_FILES = {
-            "options.txt", "optionsof.txt", "optionsshaders.txt", "servers.dat"
+            "options.txt", "optionsof.txt", "optionsshaders.txt"
+    };
+    private static final String[] MAP_FOLDERS = {
+            "journeymap", "XaeroWorldMap", "XaeroWaypoints", "schematics"
+    };
+    private static final String[] LOG_FOLDERS = {
+            "logs", "crash-reports"
     };
 
     private static final class Entry {
@@ -240,7 +250,14 @@ public class FolderImporter {
         if ((mOptions & OPT_SCREENSHOTS) != 0) addJob(jobs, root, "screenshots", true, new File(mGameDir, "screenshots"));
         if ((mOptions & OPT_SETTINGS) != 0) {
             for (String name : SETTINGS_FILES) addJob(jobs, root, name, false, new File(mGameDir, name));
-            addJob(jobs, root, "config", true, new File(mGameDir, "config"));
+        }
+        if ((mOptions & OPT_SERVERS) != 0) addJob(jobs, root, "servers.dat", false, new File(mGameDir, "servers.dat"));
+        if ((mOptions & OPT_CONFIG) != 0) addJob(jobs, root, "config", true, new File(mGameDir, "config"));
+        if ((mOptions & OPT_MAPS) != 0) {
+            for (String name : MAP_FOLDERS) addJob(jobs, root, name, true, new File(mGameDir, name));
+        }
+        if ((mOptions & OPT_LOGS) != 0) {
+            for (String name : LOG_FOLDERS) addJob(jobs, root, name, true, new File(mGameDir, name));
         }
         if ((mOptions & OPT_VERSIONS) != 0) addJob(jobs, root, "versions", true, new File(Tools.DIR_HOME_VERSION));
         return jobs;

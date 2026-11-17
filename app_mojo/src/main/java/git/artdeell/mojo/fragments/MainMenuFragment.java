@@ -29,7 +29,9 @@ import git.artdeell.mojo.extra.ExtraCore;
 import git.artdeell.mojo.instances.Instance;
 import git.artdeell.mojo.instances.Instances;
 import git.artdeell.mojo.prefs.screens.LauncherPreferenceMigrationFragment;
+import git.artdeell.mojo.utils.FirstRunSetup;
 import git.artdeell.mojo.utils.HelpGuide;
+import git.artdeell.mojo.utils.PresetPicker;
 import git.artdeell.mojo.utils.FileUtils;
 
 import java.io.File;
@@ -65,7 +67,8 @@ public class MainMenuFragment extends Fragment {
         mNewsButton.setOnClickListener(v -> Tools.swapFragment(requireActivity(), LauncherPreferenceMigrationFragment.class, LauncherPreferenceMigrationFragment.TAG, null));
         mDiscordButton.setOnClickListener(v -> HelpGuide.showGuide(requireActivity()));
         mCustomControlButton.setOnClickListener(v -> startActivity(new Intent(requireContext(), CustomControlsActivity.class)));
-        mInstallJarButton.setOnClickListener(v -> runInstallerWithConfirmation());
+        // The former ".jar" button is now "Presets"; the .jar installer lives in Settings > Help and tools
+        mInstallJarButton.setOnClickListener(v -> PresetPicker.show(requireActivity()));
         mEditProfileButton.setOnClickListener(v -> mVersionSpinner.openProfileEditor(requireActivity()));
 
         mPlayButton.setOnClickListener(v -> ExtraCore.setValue(ExtraConstants.LAUNCH_GAME, true));
@@ -75,9 +78,9 @@ public class MainMenuFragment extends Fragment {
         mOpenDirectoryButton.setOnClickListener((v)-> openGameDirectory(v.getContext()));
 
 
-        // Offer the quick tour once, on the very first launch
+        // First launch: quick setup (language, colors, preset), then the offer of a tour
         view.post(() -> {
-            if (isAdded()) HelpGuide.maybeOfferOnFirstRun(requireActivity());
+            if (isAdded()) FirstRunSetup.maybeShow(requireActivity());
         });
     }
 

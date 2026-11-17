@@ -7,6 +7,8 @@ import android.content.SharedPreferences;
 import android.os.Build;
 import android.util.Log;
 
+import androidx.preference.PreferenceManager;
+
 import java.io.IOException;
 
 import git.artdeell.mojo.R;
@@ -96,6 +98,74 @@ public final class DeviceProfile {
         editor.remove(KEY_PROFILE_VERSION);
         editor.commit();
         applyFirstRunDefaults(prefs);
+    }
+
+    // Target length of the short screen side in pixels, per chip tier 0..3
+    private static final int[] SIDE_PERFORMANCE = {480, 576, 720, 900};
+    private static final int[] SIDE_BALANCED = {540, 720, 900, 1080};
+    private static final int[] SIDE_QUALITY = {720, 900, 1080, 1440};
+    private static final int[] SIDE_BATTERY = {432, 480, 540, 720};
+
+    private static int resolutionRatio(Context context, int targetSide) {
+        android.util.DisplayMetrics metrics = context.getResources().getDisplayMetrics();
+        int minSide = Math.min(metrics.widthPixels, metrics.heightPixels);
+        if (minSide <= targetSide) return 100;
+        int increment = context.getResources().getInteger(R.integer.resolution_seekbar_increment);
+        int minimum = context.getResources().getInteger(R.integer.resolution_seekbar_min);
+        float ratio = 100f * targetSide / minSide;
+        int value = Math.round(ratio / increment) * increment;
+        return Math.max(minimum, Math.min(100, value));
+    }
+
+    /**
+     * Applies a named preset (auto, performance, balanced, quality, battery, compat)
+     * using the chip tier of the detected or chosen device.
+     */
+    public static void applyPreset(Context context, String preset) {
+        SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(context);
+        if ("auto".equals(preset)) {
+            restoreOptimalSettings(prefs);
+            return;
+        }
+        DeviceDatabase.Soc soc = DeviceDatabase.current(context);
+        int tier = Math.max(0, Math.min(3, soc.tier));
+        boolean pinBigCores = DeviceDatabase.FAMILY_MALI.equals(soc.family) && hasMixedCoreFrequencies();
+
+        int side;
+        boolean sustained;
+        boolean vsync;
+        boolean affinity;
+        boolean alternateSurface = tier >= 2;
+        switch (preset) {
+            case "performance":
+                side = SIDE_PERFORMANCE[tier]; sustained = false; vsync = false; affinity = pinBigCores;
+                break;
+            case "quality":
+                side = SIDE_QUALITY[tier]; sustained = true; vsync = true; affinity = pinBigCores;
+                break;
+            case "battery":
+                side = SIDE_BATTERY[tier]; sustained = true; vsync = true; affinity = false;
+                break;
+            case "compat":
+                side = SIDE_BALANCED[tier]; sustained = false; vsync = false; affinity = false; alternateSurface = false;
+                break;
+            default: // balanced
+                side = SIDE_BALANCED[tier]; sustained = true; vsync = tier >= 2; affinity = pinBigCores;
+                break;
+        }
+        prefs.edit()
+                .putInt("resolutionRatio", resolutionRatio(context, side))
+                .putBoolean("sustainedPerformance", sustained)
+                .putBoolean("force_vsync", vsync)
+                .putBoolean("bigCoreAffinity", affinity)
+                .putBoolean("alternate_surface", alternateSurface)
+                .commit();
+    }
+
+    /** Remembers the device picked from the list and applies balanced settings for it */
+    public static void selectDevice(Context context, DeviceDatabase.Device device) {
+        DeviceDatabase.select(context, device);
+        applyPreset(context, "balanced");
     }
 
     public static void applyFirstRunDefaults(SharedPreferences prefs) {

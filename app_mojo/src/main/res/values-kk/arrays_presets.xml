@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="preset_names">
+        <item>Авто: құрылғыға ең жақсысы</item>
+        <item>Макс. FPS: төмен ажыратымдылық</item>
+        <item>Теңгерімді</item>
+        <item>Сапа: айқынырақ сурет</item>
+        <item>Батарея үнемдеу: салқын әрі тыныш</item>
+        <item>Үйлесімділік: ең қауіпсіз баптаулар</item>
+    </string-array>
+</resources>
