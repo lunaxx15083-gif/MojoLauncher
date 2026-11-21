@@ -1,0 +1,35 @@
+name: Apply MobileGlues
+
+# Запускается вручную: вкладка Actions -> Apply MobileGlues -> Run workflow.
+# Вносит правки в 5 существующих файлов и сохраняет их коммитом в репозиторий.
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  apply:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+
+      - name: Apply edits
+        run: python apply_mobileglues.py .
+
+      - name: Commit changes
+        if: always()
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@users.noreply.github.com"
+          git add -A
+          if git diff --cached --quiet; then
+            echo "Nothing to commit"
+          else
+            git commit -m "Apply MobileGlues integration"
+            git push
+          fi
