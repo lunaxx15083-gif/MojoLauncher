@@ -9,6 +9,7 @@ import git.artdeell.mojo.game.renderer.def.Renderers;
 import git.artdeell.mojo.game.renderer.extra.GLESProvider;
 import git.artdeell.mojo.prefs.LauncherPreferences;
 import git.artdeell.mojo.utils.JREUtils;
+import git.artdeell.mojo.utils.MobileGluesConfig;
 
 import java.io.File;
 import java.util.Map;
@@ -54,6 +55,35 @@ public abstract class GLESRenderSpec implements RenderSpec {
         }
         public String library() {
             return "libltw.so";
+        }
+        protected int glesVersion() {
+            return 3;
+        }
+    }
+
+    /**
+     * MobileGlues: OpenGL 4.x over OpenGL ES 3 wrapper. Reads its config from MG_DIR_PATH.
+     */
+    public static class MobileGluesRenderSpec extends GLESRenderSpec {
+        @Override
+        public void setupEnvironment(Context context, Map<String, String> envMap) {
+            super.setupEnvironment(context, envMap);
+            MobileGluesConfig.configureEnvironment(context, envMap);
+        }
+        public boolean compatibleDevice(Context context) {
+            return JREUtils.getDetectedVersion() >= 3 && new File(Tools.NATIVE_LIB_DIR, this.library()).exists();
+        }
+        public String name() {
+            return "MobileGlues";
+        }
+        public int displayName() {
+            return R.string.mcl_setting_renderer_mobileglues;
+        }
+        public String tag() {
+            return Renderers.MOBILEGLUES_RENDERER;
+        }
+        public String library() {
+            return "libmobileglues.so";
         }
         protected int glesVersion() {
             return 3;

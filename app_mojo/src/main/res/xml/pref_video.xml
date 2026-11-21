@@ -30,6 +30,13 @@
             android:icon="@drawable/ic_px_image_renderer"
             app2:useSimpleSummaryProvider="true"/>
 
+        <Preference
+            android:key="mobileglues_settings"
+            android:icon="@drawable/ic_px_alt_sliders"
+            android:title="@string/mobileglues_settings_title"
+            android:summary="@string/mobileglues_settings_description"
+            android:fragment="git.artdeell.mojo.prefs.screens.LauncherPreferenceMobileGluesFragment"/>
+
         <androidx.preference.SwitchPreferenceCompat
             android:defaultValue="false"
             android:key="ignoreNotch"

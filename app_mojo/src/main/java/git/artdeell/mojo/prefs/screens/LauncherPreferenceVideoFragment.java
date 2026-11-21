@@ -116,6 +116,7 @@ public class LauncherPreferenceVideoFragment extends LauncherPreferenceFragment 
         RendererCache list = RendererCache.getCompatibleRenderers(getContext());
         rendererListPreference.setEntries(list.rendererDisplayNames);
         rendererListPreference.setEntryValues(list.rendererIds.toArray(new String[0]));
+        requirePreference("mobileglues_settings").setVisible(list.rendererIds.contains("mobileglues"));
 
 
         Preference drivers = requirePreference("manageDrivers");
